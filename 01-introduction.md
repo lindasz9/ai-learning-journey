@@ -1,4 +1,4 @@
-# Getting Started – My AI Learning Journey
+# Introduction – My AI Learning Journey
 
 ## About Me
 - I'm a 16-year-old motivated girl learning how to code.
