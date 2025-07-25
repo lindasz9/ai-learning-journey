@@ -40,6 +40,8 @@ The core idea is learning a strategy (called a *policy*) to maximize cumulative 
 ### 🔹 Q-Function (*Action-Value* Function)
 - Estimates the expected *reward* of taking a specific *action* in a specific *state* and following a *policy* thereafter.
 
+<img src="https://www.j-labs.pl/wp-content/uploads/2023/02/qlearning_02.jpg" height="300"/>
+
 ---
 
 ## 🔄 The RL Loop
@@ -49,6 +51,8 @@ The core idea is learning a strategy (called a *policy*) to maximize cumulative 
 3. The *environment* transitions to a new *state* and gives a *reward*.
 4. The *agent* uses this experience to improve its *policy*.
 5. Repeat.
+
+<img src="https://www.researchgate.net/profile/Daniel-Araujo-10/publication/337855423/figure/fig3/AS:834401264992256@1575948172072/Basic-diagram-of-a-RL-scheme.png" height="300"/>
 
 ### 🧭 *Exploration* vs *Exploitation*
 - **Exploration**: Trying new *actions* to discover their effects.
