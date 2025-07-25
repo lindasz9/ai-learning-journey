@@ -197,11 +197,11 @@ Each data point includes both the input (features) and the correct output (label
 ## 📊 Model Evaluation Metrics
 
 ### Classification:
-- **Accuracy** = (Correct predictions) / (Total predictions)
-- **Precision** = TP / (TP + FP)
-- **Recall** = TP / (TP + FN)
-- **F1-Score** = Harmonic mean of precision and recall
-- **Confusion Matrix** = Table comparing predicted vs actual labels
+- **Accuracy**: (Correct predictions) / (Total predictions)
+- **Precision**: TP / (TP + FP)
+- **Recall**: TP / (TP + FN)
+- **F1-Score**: Harmonic mean of precision and recall
+- **Confusion Matrix**: Table comparing predicted vs actual labels
 
 <img src="https://miro.medium.com/max/2560/1*mdtqR2kyElMd0cCGM4gtuw.jpeg" height="300"/>
 

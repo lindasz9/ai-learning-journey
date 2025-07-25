@@ -334,11 +334,11 @@ Each data point includes both the input (features) and the correct output (label
 ## 📊 Model Evaluation Metrics
 
 ### Classification:
-- **Accuracy** = (Correct predictions) / (Total predictions)
-- **Precision** = TP / (TP + FP)
-- **Recall** = TP / (TP + FN)
-- **F1-Score** = Harmonic mean of precision and recall
-- **Confusion Matrix** = Table comparing predicted vs actual labels
+- **Accuracy**: (Correct predictions) / (Total predictions)
+- **Precision**: TP / (TP + FP)
+- **Recall**: TP / (TP + FN)
+- **F1-Score**: Harmonic mean of precision and recall
+- **Confusion Matrix**: Table comparing predicted vs actual labels
 
 <img src="https://miro.medium.com/max/2560/1*mdtqR2kyElMd0cCGM4gtuw.jpeg" height="300"/>
 
@@ -371,9 +371,15 @@ Each data point includes both the input (features) and the correct output (label
 - **Sigmoid function**: A function that maps any real-valued number into a value between 0 and 1, commonly used to model probabilities. 
 ```
 
+## **Important** Rules for Notes
+
 - All future notes don't have to look exactly like this, as they will obviously have different subtitles and sections. However, this is the base structure, which you can reshape according to the needs of each topic.  
 - You don’t need to stick to these exact subtitles — feel free to change, add, or remove them as you see fit.  
-- What stays the same in all notes: if there's an unknown word in the notes, put it in *asterisks* and include it in the final section titled ## 🧠 Important Concepts (in alphabetical order). Do not put a word in asterisks unless it also appears in the concepts section. Only include concepts in that section if they have already appeared in the text.  
+- Important in all notes: if there's an unknown word in the notes, put it in *asterisks* and include it in the final section titled `## 🧠 Important Concepts` (in alphabetical order). Do not put a word in asterisks unless it also appears in the concepts section. Only include concepts in that section if they have already appeared in the text.  
+- If in a text section there's a really specific concept that can only relate to that one text section, then that concept must be clarified at the end of that section. These words should also be put in *asterisks*.
+- For the concepts: there's more place where you can define them (e.g., at the end under `## 🧠 Important Concepts`, under text sections, under `- **Extra**` or else), but each concept should only be defined once, and if it appears anywhere in the whole file (except when defining it), it should be put in *asterisks*.
+- After a text section, when you feel like it would be good to insert a picture, insert this: `<img src="" height="300"/>`.
+- If there's a really important mathematical equation, you can include them.
 - Create the most perfect notes ever written on the topics.
 
 ## Right Now
