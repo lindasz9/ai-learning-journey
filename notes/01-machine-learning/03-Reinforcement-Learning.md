@@ -98,6 +98,8 @@ The core idea is learning a strategy (called a *policy*) to maximize cumulative 
   - **Experience replay**: Stores past experiences to break correlation in data and improve learning stability.
   - **Target network**: A separate copy of the network used to compute stable target Q-values during training.
 
+<img src="https://cdn.analyticsvidhya.com/wp-content/uploads/2019/04/Screenshot-2019-04-16-at-5.46.01-PM.png" height="300"/>
+
 ---
 
 ## 🔒 On-*Policy* Algorithms
