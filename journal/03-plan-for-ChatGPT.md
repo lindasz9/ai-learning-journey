@@ -376,7 +376,6 @@ Each data point includes both the input (features) and the correct output (label
 - What stays the same in all notes: if there's an unknown word in the notes, put it in *asterisks* and include it in the final section titled ## 🧠 Important Concepts (in alphabetical order). Do not put a word in asterisks unless it also appears in the concepts section. Only include concepts in that section if they have already appeared in the text.  
 - Create the most perfect notes ever written on the topics.
 
-
 ## Right Now
 
 What we finished:

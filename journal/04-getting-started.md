@@ -23,3 +23,7 @@ Anyways, my favourite part in creating these notes is selecting pictures for vis
 ✅ Unsupervised Learning
 
 I feel so smart with my `03-plan-for-ChatGPT.md` because ChatGPT does exactly what I want. My ritual is that when I finish a topic, I start a new ChatGPT chat so we don’t mix different topics. In my first message, I send only one thing: my `03-plan-for-ChatGPT.md` file. And everything happens exactly the way I imagined.
+
+## 07/25/2025
+
+I'm back. I was just in Paris for a few days, but I'm back in track. So I missed 3 days but we continue from where we finished.
