@@ -130,7 +130,7 @@ We already had a chat where we discussed this learning structure. So before jump
 - No diagrams or visual explanations needed, I will add them later myself.
 - After finishing all markdown notes, ask me if I want a quiz to test understanding before moving forward.  
 - Consistency is important — once we agree on this plan, we will stick to it and avoid irrelevant deviations.
-- All notes should look like the example notes
+- All notes should look like the example notes.
 
 ## Example Notes
 
@@ -373,23 +373,25 @@ Each data point includes both the input (features) and the correct output (label
 
 ## **Important** Rules for Notes
 
-- All future notes don't have to look exactly like this, as they will obviously have different subtitles and sections. However, this is the base structure, which you can reshape according to the needs of each topic.  
-- You don’t need to stick to these exact subtitles — feel free to change, add, or remove them as you see fit.  
-- Important in all notes: if there's an unknown word in the notes, put it in *asterisks* and include it in the final section titled `## 🧠 Important Concepts` (in alphabetical order). Do not put a word in asterisks unless it also appears in the concepts section. Only include concepts in that section if they have already appeared in the text.  
-- If in a text section there's a really specific concept that can only relate to that one text section, then that concept must be clarified at the end of that section. These words should also be put in *asterisks*.
-- For the concepts: there's more place where you can define them (e.g., at the end under `## 🧠 Important Concepts`, under text sections, under `- **Extra**` or else), but each concept should only be defined once, and if it appears anywhere in the whole file (except when defining it), it should be put in *asterisks*.
-- After a text section, when you feel like it would be good to insert a picture, insert this: `<img src="" height="300"/>`.
-- If there's a really important mathematical equation, you can include them.
-- Create the most perfect notes ever written on the topics.
+- Future notes don’t have to follow this exact format, since topics will naturally require different subtitles and sections. However, this serves as the base structure, which you can adapt as needed for each topic.
+- You don’t need to keep the exact same subtitles — feel free to modify, add, or remove them depending on what fits the content best.
+- Important for all notes: if there’s an unfamiliar or technical word in the text, enclose it in *asterisks* (enclose that word everytime it appears even when plural, except when defining it) and list it in the final section titled `## 🧠 Important Concepts`, in **alphabetical order** (or there's another option that I explain in the next paragraph). Do not add any other concept if it hasn't appeared yet. Do not add concepts that have alraedy been defined somewhere.
+- If a concept appears in only one specific text section and is too narrow to be listed globally, define it immediately at the end of that section under `- **Extra**`. These terms should also be marked with *asterisks*.
+- Concepts may be defined in several possible places (e.g., in `## 🧠 Important Concepts`, under specific text sections, or under `- **Extra**`), but **each concept should only be defined once**. If a concept appears again anywhere in the document (except where it's defined), it should still be written in *asterisks*.
+- After any explanatory text section, if you feel a visual would help, insert an image placeholder like this:  
+  `<img src="" height="300"/>`
+- If there's a particularly important mathematical equation, feel free to include it.
+- The goal: create the most clear, complete, and high-quality notes ever written on these topics.
 
 ## Right Now
 
 What we finished:
 - Supervised Learning
 - Unsupervised Learning
+- Reinforcement Learning
 
 Next:
-- Reinforcement Learning
+- Hybrid Learning Techniques
 
 ## File Structure Plan for Machine Learning
 
