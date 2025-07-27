@@ -3,14 +3,30 @@
 ## Algorithms
 
 📘 Regression Algorithms
-- ...
+- Linear Regression
+  - Ridge Regression
+  - Lasso Regression
+  - Elastic Net
+- Support Vector Regression (SVR)
 
 📙 Classification Algorithms
-- ...
+- Logistic Regression
+- k-Nearest Neighbors (kNN)
+- Decision Trees
+- Naive Bayes
+  - Gaussian NB
+  - Multinomial NB
+  - Bernoulli NB
+- Support Vector Machines (SVM)
+  - Linear SVM
+  - Non-linear SVM
 
 🌲 Ensemble and Boosting Methods
-- ...
-
+- Random Forest
+- Gradient Boosting
+  - XGBoost
+  - LightGBM
+  - CatBoost
 ---
 
 ## 📘 Regression Algorithms
