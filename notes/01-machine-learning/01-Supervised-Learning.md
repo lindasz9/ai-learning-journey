@@ -201,6 +201,7 @@ Each data point includes both the input (features) and the correct output (label
 - **Precision**: TP / (TP + FP)
 - **Recall**: TP / (TP + FN)
 - **F1-Score**: Harmonic mean of precision and recall
+- **AUC (Area Under the ROC Curve)**: Measures the ability of the classifier to distinguish between classes across all thresholds
 - **Confusion Matrix**: Table comparing predicted vs actual labels
 
 <img src="https://miro.medium.com/max/2560/1*mdtqR2kyElMd0cCGM4gtuw.jpeg" height="300"/>

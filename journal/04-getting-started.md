@@ -31,3 +31,15 @@ I'm back! I spent a few days in Paris, but now I'm back on track. I may have mis
 ✅ Reinforcement Learning
 
 A lesson that I've learned: If you think ChatGPT doesn't do exactly what you want, you're just not prompting good enough.
+
+## 07/26/2025
+
+✅ Hybrid Learning Techniques
+
+I wanted to start the next topic, but I cannot upload more files for ChatGPT today, because I've reached the limit. So I'm a little angry right now. Why is it not allowing me to study? And I could copy and paste the content of the file into a message, but I've tried it, and it's not working properly. Maybe I need to buy the Plus version.
+
+## 07/27/2025
+
+When I send ChatGPT the plan from which it knows what kind of notes to generate, the workflow doesn't stop there. So it's not just upload, send, copy, paste, done. Every topic is a 2–4 hour activity. First, I review whether the distribution of the topic is good, then I correct some parts. After that, I send a message about what should be improved, then I read it again, send another message, and again and again. If I feel everything is perfect, I gather the concepts together, and then I insert images. And yes, this takes up a few hours.
+
+✅ ML Workflow

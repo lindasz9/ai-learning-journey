@@ -6,7 +6,7 @@ Hybrid learning techniques combine elements from multiple learning paradigms —
 
 ---
 
-## Types
+## 📚 Types
 
 - Semi-Supervised Learning  
 - Self-Supervised Learning  
@@ -190,6 +190,19 @@ Multi-modal learning involves building models that can understand and integrate 
   - Hybrid fusion: Mixing early and late fusion to leverage both advantages.
 
 <img src="https://www.kdnuggets.com/wp-content/uploads/rosidi_multimodal_models_explained_9.png" height="300"/>
+
+---
+
+## 📘 Summary Table
+
+| Learning Paradigm         | Description                                                                 | Key Features                                                                 | Typical Use Cases                                      |
+|---------------------------|-----------------------------------------------------------------------------|------------------------------------------------------------------------------|---------------------------------------------------------|
+| Semi-Supervised Learning  | Uses a small amount of labeled data and a large amount of unlabeled data   | Combines supervised and unsupervised learning                              | Text classification, image recognition with few labels |
+| Self-Supervised Learning  | Creates labels from raw data itself to learn representations               | Learns useful features without manual labels                                | NLP (e.g., BERT), vision pretraining                   |
+| Transfer Learning         | Transfers knowledge from one task/domain to another                        | Reuses pre-trained models on new but related tasks                          | Fine-tuning CNNs, language models                      |
+| Meta-Learning             | Learns how to learn; generalizes learning strategies across tasks          | Fast adaptation to new tasks with few examples                              | *Few-shot learning*, reinforcement learning              |
+| Multi-task Learning       | Trains on multiple related tasks simultaneously                            | Shared representations across tasks                                         | Joint language + sentiment analysis                    |
+| Multi-modal Learning      | Learns from multiple data modalities (e.g., text + image)                  | Integrates and aligns heterogeneous input sources                           | Image captioning, audio-visual recognition             |
 
 ---
 
