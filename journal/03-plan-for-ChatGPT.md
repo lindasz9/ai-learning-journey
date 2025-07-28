@@ -17,10 +17,10 @@ We already had a chat where we discussed this learning structure. So before jump
    - Supervised Learning
    - Unsupervised Learning
    - Reinforcement Learning
-   - Semi-Supervised Learning
-   - Self-Supervised Learning
-   - Transfer Learning
-   - Meta-Learning
+   - Hybrid Learning Techniques (Semi-Supervised Learning, Self-Supervised Learning, Transfer Learning, Meta-Learning)
+   - Machine Learning Workflow
+   - Supervised Learning Algorithms in Python
+   - Unsupervised Learning Algorithms in Python
 
 2. 🧠 Deep Learning
 
@@ -134,7 +134,7 @@ We already had a chat where we discussed this learning structure. So before jump
 
 ## Example Notes
 
-- `Supervised_Learning.md` - I also sent this file to you
+- I send a file to you
 
 ## **Important** Rules for Notes
 
@@ -151,20 +151,28 @@ We already had a chat where we discussed this learning structure. So before jump
 ## Right Now
 
 What we finished:
-- Supervised Learning
-- Unsupervised Learning
-- Reinforcement Learning
-- Hybrid Learning Techniques
+- Machine Learning
+  - Supervised Learning
+  - Unsupervised Learning
+  - Reinforcement Learning
+  - Hybrid Learning Techniques (Semi-Supervised Learning, Self-Supervised Learning, Transfer Learning, Meta-Learning)
+  - Machine Learning workflow
+  - Supervised Learning Algorithms in Python
+  - Unsupervised Learning Algorithms in Python
 
 Next:
-- ML workflow
+- 
 
-## File Structure Plan for Machine Learning
+## File Structure for Deep Learning
 
-1. 00_ML_Overview.md
-2. 01_Supervised_Learning.md
-3. 02_Unsupervised_Learning.md
-4. 03_Reinforcement_Learning.md
-5. 04_Hybrid_Learning_Techniques.md 
-6. 05_ML_Workflow.md
-7. 06_Pipelines_and_Tools.md
+Deep Learning Overview
+Artificial Neural Networks (ANN)
+Convolutional Neural Networks (CNN)
+Recurrent Neural Networks (RNN)
+Long Short-Term Memory (LSTM)
+Attention Mechanisms
+Transformers
+Generative Adversarial Networks (GANs)
+Autoencoders
+Deep Learning Workflow
+Deep Learning in Python

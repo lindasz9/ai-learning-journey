@@ -43,3 +43,13 @@ I wanted to start the next topic, but I cannot upload more files for ChatGPT tod
 When I send ChatGPT the plan from which it knows what kind of notes to generate, the workflow doesn't stop there. So it's not just upload, send, copy, paste, done. Every topic is a 2–4 hour activity. First, I review whether the distribution of the topic is good, then I correct some parts. After that, I send a message about what should be improved, then I read it again, send another message, and again and again. If I feel everything is perfect, I gather the concepts together, and then I insert images. And yes, this takes up a few hours.
 
 ✅ ML Workflow
+
+✅ Supervised Learning Algorithms in Python
+
+This topic was easy I finished it under an hour. ChatGPT literally send me the structure I wanted. Perfect.
+
+## 07/28/2025
+
+✅ Unsupervised Learning Algorithms in Python
+
+Also was easy.
