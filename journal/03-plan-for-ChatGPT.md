@@ -289,7 +289,7 @@ The algorithm learns to find patterns, structures, or groupings in the data with
 - The style of the notes should stay the same, just the value of the notes not.
 - You don’t need to keep the exact same subtitles — feel free to modify, add, or remove them depending on what fits the content best.
 - **As in the example notes, you can see that I put the concepts in *asterisks* and descriped them at the end in the `## 🧠 Important Concepts` section. You don't need to deal with this, I will do this after you sent me the notes. So just include the `## 🧠 Important Concepts` title at the ned, and leave it empty.**
-- **Do not put anything in single *asterisks*.**
+- **Do not put anything in *single asterisks* or **double asterisks**.**
 - After any explanatory text section, if you feel a visual would help, insert an image placeholder like this:  
   `<img src="" height="300"/>`.
 - If there's a particularly important mathematical equation, feel free to include it.
@@ -311,6 +311,7 @@ What we finished:
 - Deep Learning
   - Deep Learning Overview
   - Artificial Neural Networks (ANN)
+  - ANN in Python
 
 Next:
 - Convolutional Neural Networks (CNN)
@@ -319,9 +320,13 @@ Next:
 
 Deep Learning Overview
 Artificial Neural Networks (ANN)
+ANN in Python
 Convolutional Neural Networks (CNN)
+CNN in Python
 Recurrent Neural Networks (RNN)
+RNN in Python
 Long Short-Term Memory (LSTM)
+LSTM in Python
 Attention Mechanisms
 Transformers
 Generative Adversarial Networks (GANs)

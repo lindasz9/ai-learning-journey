@@ -60,10 +60,20 @@ The thing is, it's only 12 AM right now, and I can't upload a file to ChatGPT un
 
 ✅ Reinforcement Learning Algorithms in Python
 
-Maybe I won't upgrade to ChatGPT Plus. But maybe I will. From tomorrow, I feel have another big thing to do (secret), and I won't have this much time to spend studying on this, so maybe I won't need this unlimited file uploading. But maybe I will.
+Maybe I won’t upgrade to ChatGPT Plus. But maybe I will. Starting tomorrow, I have another big project (secret), and I won’t have as much time to study this, so maybe I won’t need unlimited file uploads. But maybe I will.
 
-I think I finished the whole Machine Learning topic, let's jump right into Deep learning.
+I think I’ve finished the entire Machine Learning topic, so let’s jump right into Deep Learning
 
 ✅ Deep Learning Overview
 
 ✅ Artificial Neural Networks (ANN)
+
+As you can see, I’ve reached the daily limit of 3 file uploads. So I guess I’m done for today. Too bad — I was feeling so productive. Or maybe I’ll create another ChatGPT profile?
+
+✅ Artificial Neural Networks in Python
+
+I created an account with my other email I'm unstoppable.
+
+✅ Convolutional Neural Networks
+
+Today I’m really unstoppable. But starting tomorrow, I don’t know if I’ll be, because I’ll have another important thing to focus on. Also, I need to learn C++ for a programming contest this year. I’m familiar with Python, JavaScript, PHP, and a little bit of C, but not with C++ yet. I know the logic, so I think learning a new language will be easy.
