@@ -65,3 +65,5 @@ Maybe I won't upgrade to ChatGPT Plus. But maybe I will. From tomorrow, I feel h
 I think I finished the whole Machine Learning topic, let's jump right into Deep learning.
 
 ✅ Deep Learning Overview
+
+✅ Artificial Neural Networks (ANN)
