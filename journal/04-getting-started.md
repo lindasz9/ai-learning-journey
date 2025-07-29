@@ -10,6 +10,8 @@ So because there's no place that's perfect for me to learn from, I'll do it with
 
 I already learned Machine Learning a few months ago, but I like to keep things organized, so I'll quickly redo my notes. I don’t want to waste much time, but it’s also good to organize knowledge.
 
+✅ Machine Learning Overview
+
 I hate that I’m such a perfectionist. I already know this stuff, but I still spent hours creating the ultimate best notes ever. I was a bit disappointed in ChatGPT, but we made it eventually.
 
 ✅ Supervised Learning
@@ -22,7 +24,7 @@ Anyways, my favourite part in creating these notes is selecting pictures for vis
 
 ✅ Unsupervised Learning
 
-I feel so smart with my `03-plan-for-ChatGPT.md` because ChatGPT does exactly what I want. My ritual is that when I finish a topic, I start a new ChatGPT chat so we don’t mix different topics. In my first message, I send only one thing: my `03-plan-for-ChatGPT.md` file. And everything happens exactly the way I imagined.
+I feel so smart with my `03-plan-for-ChatGPT.md` because ChatGPT does exactly what I want. My ritual is that when I finish a topic, I start a new ChatGPT chat so we don’t mix different topics. In my first message, I send only two thing: my `03-plan-for-ChatGPT.md` file, and an example noets file. And everything happens exactly the way I imagined.
 
 ## 07/25/2025
 
@@ -52,4 +54,14 @@ This topic was easy I finished it under an hour. ChatGPT literally send me the s
 
 ✅ Unsupervised Learning Algorithms in Python
 
-Also was easy.
+The thing is, it's only 12 AM right now, and I can't upload a file to ChatGPT until 11 PM. That's a long wait, so unfortunately, I can't continue right now. But I asked my mom if it's okay to buy the subscription, and she said yes. However, she asked me to wait until the 30th of July because we have another subscription renewing that day, and it's better to align both on the same date. I agreed, so I have to wait two more days — then I’ll finally be allowed to continue studying.
+
+## 07/29/2025
+
+✅ Reinforcement Learning Algorithms in Python
+
+Maybe I won't upgrade to ChatGPT Plus. But maybe I will. From tomorrow, I feel have another big thing to do (secret), and I won't have this much time to spend studying on this, so maybe I won't need this unlimited file uploading. But maybe I will.
+
+I think I finished the whole Machine Learning topic, let's jump right into Deep learning.
+
+✅ Deep Learning Overview

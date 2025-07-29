@@ -65,11 +65,33 @@ The core idea is learning a strategy (called a *policy*) to maximize cumulative 
 
 ### 🔹 Episodic vs Continuing Tasks
 - **Episodic**: Learning tasks with a clear beginning and end (e.g., games).
+  - DQN
 - **Continuing**: Tasks that go on indefinitely (e.g., control systems).
 
 ### 🔹 Deterministic vs Stochastic Environments
 - **Deterministic**: Next *state* is fully determined by current *state* and *action*.
+  - Q-Learning, DQN
 - **Stochastic**: Outcomes have randomness, requiring probabilistic modeling.
+  - Policy Gradient Methods
+
+### 🔹 On-Policy vs Off-Policy
+- **Off-policy**: Learning from actions taken by a different *policy*.
+  - Q-Learning, DQN, SARSA
+- **On-policy**: Learning from actions taken by the current *policy*.
+  - Policy Gradient Methods, Actor-Critic Methods
+
+### 🔹 Value-based vs Policy-based vs Actor-Critic
+- **Value-based**: Learn a *value function* to derive the *policy* indirectly.
+  - Q-Learning, DQN, SARSA
+- **Policy-based**: Learn the *policy* directly without using a *value function*.
+  - Policy Gradient Methods
+- **Actor-Critic**: Combines both value-based and *policy*-based methods by having an *actor* (*policy*) and a *critic* (*value function*) learning together.
+  - Actor-Critic Methods
+
+### 🔹 Model-free vs Model-based
+- **Model-free**: Learns *policies* or *value functions* without an explicit model of the *environment*.
+  - Q-Learning, DQN, SARSA, Policy Gradient Methods, Actor-Critic Methods
+- **Model-based**: Uses a model of the *environment* to plan and improve *policies*.
 
 ---
 
@@ -81,7 +103,7 @@ The core idea is learning a strategy (called a *policy*) to maximize cumulative 
   $$
   Q(s, a) \leftarrow Q(s, a) + \alpha \left[ r + \gamma \max_{a'} Q(s', a') - Q(s, a) \right]
   $$
-- **When to use**: Discrete *action* spaces and when you don’t need to follow the current *policy* (*off-policy*).
+- **When to use**: Discrete *action* spaces and when you don’t need to follow the current *policy* (off-*policy*).
 - **Strengths**:  
   - Simple to implement  
   - Proven *convergence* under certain conditions  
@@ -171,6 +193,4 @@ The core idea is learning a strategy (called a *policy*) to maximize cumulative 
 - **ε-greedy**: An *exploration* strategy where the *agent* chooses a random *action* with probability ε, and the best-known *action* with probability 1−ε. It balances *exploration* and *exploitation*.
 - **Episode**: A single sequence of *states*, *actions*, and *rewards* that ends in a terminal *state*. Used in *episodic* tasks where each run resets the *environment*.
 - **Neural network**: A model used to approximate functions or *policies* in RL.  
-- **Off-policy**: Learning about a *policy* while following a different one.  
-- **On-policy**: Learning about and following the same *policy*.  
 - **Sample efficiency**: How well an algorithm learns from limited experience.  

@@ -6,6 +6,10 @@ Machine Learning (ML) is a subset of artificial intelligence that enables system
 
 ---
 
+## Why Learning?
+
+---
+
 ## 📂 Main Categories of Machine Learning
 
 ### 1. **Supervised Learning**
@@ -37,11 +41,11 @@ Machine Learning (ML) is a subset of artificial intelligence that enables system
 
 1. Define the problem
 2. Collect and clean the data
-3. Split data into *train/test* sets
+3. Split data into train/test sets
 4. Choose an algorithm
 5. Train the model
-6. *Evaluate the model*
-7. *Tune hyperparameters*
+6. Evaluate the model
+7. Tune hyperparameters
 8. Deploy the model
 
 ---
@@ -54,14 +58,5 @@ Machine Learning (ML) is a subset of artificial intelligence that enables system
 - **pandas** – Data manipulation and analysis (especially for tabular data).
 - **Matplotlib / seaborn** – Visualization libraries for plotting data and model results.
 - **Jupyter Notebooks** – Interactive environment for writing and running code.
-
----
-
-## 🧠 Important Concepts
-
-- **Training Data**: The dataset the model learns from.
-- **Test Data**: Used to evaluate the model's performance.
-- **Model Evaluation**: Metrics like accuracy, precision, recall, MSE.
-- **Hyperparameter Tuning**: Adjust model settings to improve accuracy.
 
 ---
