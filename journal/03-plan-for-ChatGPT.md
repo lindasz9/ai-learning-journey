@@ -135,151 +135,240 @@ We already had a chat where we discussed this learning structure. So before jump
 ## Example Notes
 
 ```md
-# Unsupervised Learning
+# Artificial Neural Networks in Python
 
-## 🧠 What is Unsupervised Learning?
+## Libraries
 
-Unsupervised learning is a type of machine learning where models are trained on **unlabeled data**.  
-The algorithm learns to find patterns, structures, or groupings in the data without explicit instructions.
+🧪 **TensorFlow / Keras**
+- Classification
+- Regression
 
----
-
-## 📂 Main Categories of Unsupervised Learning
-
-### 1. **Clustering**
-- **What it is**: Clustering is the task of grouping similar data points together based on their features.  
-- **Real-world examples**:
-  - Customer segmentation in marketing
-  - Grouping news articles by topic
-  - Detecting fraudulent behavior
-  - Recommending content based on user similarity
-
-### 2. ***Dimensionality* Reduction**
-- **What it is**: *Dimensionality* reduction reduces the number of features (or dimensions) while preserving important information in the data.
-- **Real-world examples**:
-  - Visualizing high-dimensional data in 2D/3D
-  - Noise reduction in images
-  - Compressing large datasets
-  - Speeding up training for other ML models
+🧪 **PyTorch**
+- Classification
+- Regression
 
 ---
 
-## 📘 Clustering Algorithms
+## 🧪 TensorFlow / Keras
 
-### 🔹 k-Means Clustering
-- **How it works**: Partitions data into k *clusters*  by minimizing the distance between data points and their assigned *centroid*.
-- **Use cases**: Customer segmentation, grouping documents, image compression.
-- **Strengths**:
-  - Simple and scalable
-  - Works well on spherical *clusters* 
-- **Weaknesses**:
-  - Needs k predefined
-  - Sensitive to initialization and *outliers*
-  - Assumes equally sized, circular *clusters* 
-- **Extras**:
-  - **Elbow method**: used to choose the optimal k
+### 🔹 Classification
 
-<img src="https://www.kdnuggets.com/wp-content/uploads/k-means-clustering.png" height="300"/>
+#### ⚙️ Load and Preprocess Data
+```python
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from tensorflow.keras.utils import to_categorical
 
-### 🔹 Hierarchical Clustering
-- **How it works**: Builds a tree of *clusters*  using agglomerative (bottom-up) or divisive (top-down) strategies.  
-- **Use cases**: Gene expression analysis, hierarchical document categorization.
-- **Strengths**:
-  - Doesn’t need to predefine k
-  - Results in a *dendrogram* showing *cluster* hierarchy
-- **Weaknesses**:
-  - Computationally expensive
-  - Hard to scale to large datasets
-- **Types**:
-  - Agglomerative (most common)
-  - Divisive
+X, y = load_iris(return_X_y=True)
+y = to_categorical(y)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+scaler = StandardScaler()
+X_train = scaler.fit_transform(X_train)
+X_test = scaler.transform(X_test)
+```
 
-<img src="https://www.datanovia.com/en/wp-content/uploads/dn-tutorials/003-hierarchical-clustering-in-r/figures/005-visualizing-dendrograms-cutree-1.png" height="300"/>
+#### 🏗️ Build the Model
+```python
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense
 
-### 🔹 DBSCAN (Density-Based Spatial Clustering of Applications with Noise)
-- **How it works**: Groups points that are closely packed together and marks isolated points as *noise*. Classifies points as core, border, or *noise*.
-- **Use cases**: Anomaly detection, spatial clustering, satellite image analysis.
-- **Strengths**:
-  - Doesn’t need k
-  - Handles arbitrary shapes of *clusters* 
-  - Robust to *outliers*
-- **Weaknesses**:
-  - Struggles with *clusters*  of varying density
-  - Sensitive to parameters (eps, minPts)
-- **Extra**:
-  - **Density**: The concentration of data points within a region; higher density means more points are packed closely together.
-  - **Eps**: A parameter defining the maximum distance between two points for them to be considered neighbors.
-  - **minPts**: A parameter that specifies the minimum number of points required to form a *cluster*.  
+model = Sequential()
+model.add(Dense(64, activation='relu', input_shape=(X_train.shape[1],)))
+model.add(Dense(32, activation='relu'))
+model.add(Dense(y.shape[1], activation='softmax'))
+```
 
-<img src="https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https://substack-post-media.s3.amazonaws.com/public/images/071b3ee2-5df1-4900-8539-a55d2ee18d8e_3221x2180.png" height="300"/>
+#### 🧪 Compile and Train
+```python
+model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
+model.fit(X_train, y_train, epochs=50, batch_size=8, verbose=0)
+```
+
+#### 📊 Evaluate
+```python
+loss, accuracy = model.evaluate(X_test, y_test, verbose=0)
+print("Accuracy:", accuracy)
+```
 
 ---
 
-## 📘 *Dimensionality* Reduction Techniques
+### 🔹 Regression
 
-### 🔹 PCA (Principal Component Analysis)
-- **How it works**: Transforms data into new axes (called principal components) that capture the most *variance*.
-- **Use cases**: Data visualization, feature reduction, preprocessing.
-- **Strengths**:
-  - Fast, linear method
-  - Retains key patterns in data
-- **Weaknesses**:
-  - Only captures linear relationships
-  - Hard to interpret components
+#### ⚙️ Load and Preprocess Data
+```python
+from sklearn.datasets import make_regression
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
 
-<img src="https://numxl.com/wp-content/uploads/principal-component-analysis-pca-featured.png" height="300"/>
+X, y = make_regression(n_samples=200, n_features=5, noise=10, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+scaler = StandardScaler()
+X_train = scaler.fit_transform(X_train)
+X_test = scaler.transform(X_test)
+```
 
-### 🔹 t-SNE (t-distributed Stochastic Neighbor *Embedding*)
-- **How it works**: Converts high-dimensional relationships into 2D or 3D visualizations by preserving only *local structure*.
-- **Use cases**: Visualizing image *embeddings*, document clustering, genomics.
-- **Strengths**:
-  - Excellent for visual inspection
-  - Captures complex, non-linear patterns
-- **Weaknesses**:
-  - Slow on large datasets
-  - Results vary due to randomness
+#### 🏗️ Build the Model
+```python
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense
 
-<img src="https://datachemeng.com/wp-content/uploads/SnapCrab_2018-6-3_14-4-5_No-00.png" height="300"/>
+model = Sequential()
+model.add(Dense(64, activation='relu', input_shape=(X_train.shape[1],)))
+model.add(Dense(32, activation='relu'))
+model.add(Dense(1))
+```
 
-### 🔹 UMAP (Uniform Manifold Approximation and Projection)
-- **How it works**: Similar to t-SNE but preserves both *local* and *global structure* in data, optimizing manifold topology.
-- **Use cases**: Faster and more scalable. Popular in bioinformatics and NLP.
-- **Strengths**:
-  - Faster and more stable than t-SNE
-  - Better at preserving overall data structure
-- **Weaknesses**:
-  - Harder to interpret
+#### 🧪 Compile and Train
+```python
+model.compile(optimizer='adam', loss='mse')
+model.fit(X_train, y_train, epochs=50, batch_size=8, verbose=0)
+```
 
-<img src="https://miro.medium.com/v2/resize:fit:1200/1*fGQImmija7kepddB7SFaGA.jpeg" height="300"/>
+#### 📊 Evaluate
+```python
+from sklearn.metrics import mean_squared_error
 
----
-
-## 📊 Model Evaluation
-
-### Clustering Metrics:
-- **Silhouette Score**: Measures how similar a point is to its own *cluster* vs other *clusters* .
-- **Davies–Bouldin Index**: Measures average similarity between *clusters*  (lower is better).
-- **Calinski-Harabasz Index**: Ratio of between-*cluster* dispersion to within-*cluster* dispersion.
-
-### *Dimensionality* Reduction:
-- **Explained *Variance***: Shows how much information is retained in fewer dimensions.
+y_pred = model.predict(X_test)
+print("MSE:", mean_squared_error(y_test, y_pred))
+```
 
 ---
 
-## 🧠 Important Concepts
+## 🧪 PyTorch
 
-- **Centroid**: The center of a *cluster* (mean of all data points in that *cluster*).  
-- **Cluster**: A group of data points that are similar to each other.  
-- **Dendrogram**: A tree diagram used to visualize the arrangement of the *clusters*.
-- **Dimensionality**: The number of features or attributes in a dataset.  
-- **Embedding**: A process of converting complex data (like words, images, or nodes) into numerical vectors that capture their meaning or relationships.
-- **Global structure**: The overall shape and arrangement of data clusters or patterns across the entire dataset.  
-- **Local structure**: The relationships and similarities among data points that are close to each other in the dataset.    
-- **Noise**: Irrelevant or random data points that don't belong to any clear *cluster*.  
-- **Outlier**: A data point that lies far away from other points and may distort analysis.  
-- **Principal component**: New orthogonal axes created by PCA that maximize *variance*.  
-- **Variance**: The amount of spread in the data or how much information a component captures.
+### 🔹 Classification
+
+#### ⚙️ Load and Preprocess Data
+```python
+import torch
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from torch.utils.data import TensorDataset, DataLoader
+
+X, y = load_iris(return_X_y=True)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+scaler = StandardScaler()
+X_train = scaler.fit_transform(X_train)
+X_test = scaler.transform(X_test)
+
+X_train = torch.tensor(X_train, dtype=torch.float32)
+X_test = torch.tensor(X_test, dtype=torch.float32)
+y_train = torch.tensor(y_train, dtype=torch.long)
+y_test = torch.tensor(y_test, dtype=torch.long)
+
+train_dataset = TensorDataset(X_train, y_train)
+train_loader = DataLoader(train_dataset, batch_size=8, shuffle=True)
+```
+
+#### 🏗️ Build the Model
+```python
+import torch.nn as nn
+import torch.optim as optim
+
+class ANN(nn.Module):
+    def __init__(self):
+        super(ANN, self).__init__()
+        self.fc1 = nn.Linear(X.shape[1], 64)
+        self.fc2 = nn.Linear(64, 32)
+        self.fc3 = nn.Linear(32, 3)
+
+    def forward(self, x):
+        x = torch.relu(self.fc1(x))
+        x = torch.relu(self.fc2(x))
+        return self.fc3(x)
+
+model = ANN()
+criterion = nn.CrossEntropyLoss()
+optimizer = optim.Adam(model.parameters(), lr=0.01)
+```
+
+#### 🧪 Train the Model
+```python
+for epoch in range(50):
+    for batch_X, batch_y in train_loader:
+        optimizer.zero_grad()
+        outputs = model(batch_X)
+        loss = criterion(outputs, batch_y)
+        loss.backward()
+        optimizer.step()
+```
+
+#### 📊 Evaluate
+```python
+from sklearn.metrics import accuracy_score
+
+with torch.no_grad():
+    outputs = model(X_test)
+    _, predicted = torch.max(outputs, 1)
+    acc = accuracy_score(y_test, predicted)
+    print("Accuracy:", acc)
+```
+
 ---
+
+### 🔹 Regression
+
+#### ⚙️ Load and Preprocess Data
+```python
+import torch
+from sklearn.datasets import make_regression
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+
+X, y = make_regression(n_samples=200, n_features=5, noise=10, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+scaler = StandardScaler()
+X_train = scaler.fit_transform(X_train)
+X_test = scaler.transform(X_test)
+
+X_train = torch.tensor(X_train, dtype=torch.float32)
+X_test = torch.tensor(X_test, dtype=torch.float32)
+y_train = torch.tensor(y_train, dtype=torch.float32).view(-1, 1)
+y_test = torch.tensor(y_test, dtype=torch.float32).view(-1, 1)
+```
+
+#### 🏗️ Build the Model
+```python
+import torch.nn as nn
+import torch.optim as optim
+
+class Regressor(nn.Module):
+    def __init__(self):
+        super(Regressor, self).__init__()
+        self.fc1 = nn.Linear(5, 64)
+        self.fc2 = nn.Linear(64, 32)
+        self.fc3 = nn.Linear(32, 1)
+
+    def forward(self, x):
+        x = torch.relu(self.fc1(x))
+        x = torch.relu(self.fc2(x))
+        return self.fc3(x)
+
+model = Regressor()
+criterion = nn.MSELoss()
+optimizer = optim.Adam(model.parameters(), lr=0.01)
+```
+
+#### 🧪 Train the Model
+```python
+for epoch in range(50):
+    optimizer.zero_grad()
+    outputs = model(X_train)
+    loss = criterion(outputs, y_train)
+    loss.backward()
+    optimizer.step()
+```
+
+#### 📊 Evaluate
+```python
+from sklearn.metrics import mean_squared_error
+
+with torch.no_grad():
+    y_pred = model(X_test)
+    print("MSE:", mean_squared_error(y_test, y_pred))
+```
 
 ```
 
@@ -312,9 +401,10 @@ What we finished:
   - Deep Learning Overview
   - Artificial Neural Networks (ANN)
   - ANN in Python
+  - Convolutional Neural Networks (CNN)
 
 Next:
-- Convolutional Neural Networks (CNN)
+- CNN in Python
 
 ## File Structure for Deep Learning
 

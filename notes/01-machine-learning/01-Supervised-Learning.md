@@ -51,8 +51,8 @@ Each data point includes both the input (features) and the correct output (label
 - **Weaknesses**:  
   - Still assumes linear relationships  
 - **Types**:  
-  - **Ridge**: L2 penalty — shrinks *coefficients* but keeps all.  
   - **Lasso**: L1 penalty — can shrink some *coefficients* to zero (feature selection).  
+  - **Ridge**: L2 penalty — shrinks *coefficients* but keeps all.  
   - **Elastic Net**: Combines L1 and L2 penalties — balances feature selection and coefficient shrinkage.  
 
 <img src="https://images.datacamp.com/image/upload/v1648205672/image18_a3zz7y.png" height="300"/>

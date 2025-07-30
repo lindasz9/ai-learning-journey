@@ -77,3 +77,9 @@ I created an account with my other email I'm unstoppable.
 ✅ Convolutional Neural Networks
 
 Today I’m really unstoppable. But starting tomorrow, I don’t know if I’ll be, because I’ll have another important thing to focus on. Also, I need to learn C++ for a programming contest this year. I’m familiar with Python, JavaScript, PHP, and a little bit of C, but not with C++ yet. I know the logic, so I think learning a new language will be easy.
+
+## 07/30/2025
+
+✅ Convolutional Neural Networks in Python
+
+I took a quiz with ChatGPT on Machine Learning and answered the easy questions correctly without difficulty, but I couldn’t answer all the hard ones. This made me realize that I need to dedicate more time to studying and memorizing my notes, rather than just creating and briefly reviewing them. Therefore, I’ll make sure to invest time in that as well.
