@@ -196,6 +196,12 @@ Each data point includes both the input (features) and the correct output (label
 
 ## 📊 Model Evaluation Metrics
 
+### Regression:
+- **MSE (Mean Squared Error)**: Average of squared errors
+- **RMSE**: Square root of MSE
+- **MAE**: Average of absolute errors
+- **R² Score**: Proportion of variance explained by the model
+
 ### Classification:
 - **Accuracy**: (Correct predictions) / (Total predictions)
 - **Precision**: TP / (TP + FP)
@@ -205,12 +211,6 @@ Each data point includes both the input (features) and the correct output (label
 - **Confusion Matrix**: Table comparing predicted vs actual labels
 
 <img src="https://miro.medium.com/max/2560/1*mdtqR2kyElMd0cCGM4gtuw.jpeg" height="300"/>
-
-### Regression:
-- **MSE (Mean Squared Error)**: Average of squared errors
-- **RMSE**: Square root of MSE
-- **MAE**: Average of absolute errors
-- **R² Score**: Proportion of variance explained by the model
 
 ---
 

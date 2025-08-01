@@ -83,3 +83,11 @@ Today I’m really unstoppable. But starting tomorrow, I don’t know if I’ll 
 ✅ Convolutional Neural Networks in Python
 
 I took a quiz with ChatGPT on Machine Learning and answered the easy questions correctly without difficulty, but I couldn’t answer all the hard ones. This made me realize that I need to dedicate more time to studying and memorizing my notes, rather than just creating and briefly reviewing them. Therefore, I’ll make sure to invest time in that as well.
+
+I created a new directory called `practice`, where I ask detailed questions about each topic and challenge myself to answer them thoroughly.
+
+📝 Machine Learning Overview
+
+## 07/31/2025
+
+Sorry! Today I didn't do anything because I had many other things to do, but tomorrow, I will practice and test my knowledge.

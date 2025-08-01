@@ -1,12 +1,8 @@
-# ML Overwiew
+# Machine Learning Overwiew
 
-## 🧠 Machine Learning Overview
+## 🧠 What is Machine Learning?
 
 Machine Learning (ML) is a subset of artificial intelligence that enables systems to learn patterns from data and make predictions or decisions without being explicitly programmed.
-
----
-
-## Why Learning?
 
 ---
 
@@ -15,13 +11,13 @@ Machine Learning (ML) is a subset of artificial intelligence that enables system
 ### 1. **Supervised Learning**
 - Learns from **labeled** data (input-output pairs).
 - The goal is to map inputs to known outputs.
-- Examples: regression, classification.
+- Types: regression, classification.
 - Algorithms: Linear Regression, Logistic Regression, Decision Trees, SVM, etc.
 
 ### 2. **Unsupervised Learning**
 - Learns patterns from **unlabeled** data.
 - The model tries to uncover hidden structures.
-- Examples: clustering, dimensionality reduction.
+- Types: clustering, dimensionality reduction.
 - Algorithms: K-Means, DBSCAN, PCA, etc.
 
 ### 3. **Reinforcement Learning**
@@ -33,7 +29,6 @@ Machine Learning (ML) is a subset of artificial intelligence that enables system
 ### 4. **Hybrid Learning Techniques**
 - Combines elements of supervised and unsupervised learning.
 - Types: Semi-supervised, Self-supervised, Transfer Learning, Meta-learning.
-- Covered in: `04_Hybrid_Learning_Techniques.md`
 
 ---
 
