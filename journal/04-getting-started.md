@@ -66,7 +66,7 @@ I think I’ve finished the entire Machine Learning topic, so let’s jump right
 
 ✅ Deep Learning Overview
 
-✅ Artificial Neural Networks (ANN)
+✅ Artificial Neural Networks
 
 As you can see, I’ve reached the daily limit of 3 file uploads. So I guess I’m done for today. Too bad — I was feeling so productive. Or maybe I’ll create another ChatGPT profile?
 
@@ -88,6 +88,14 @@ I created a new directory called `practice`, where I ask detailed questions abou
 
 📝 Machine Learning Overview
 
-## 07/31/2025
+## 08/02/2025
 
-Sorry! Today I didn't do anything because I had many other things to do, but tomorrow, I will practice and test my knowledge.
+I skipped a few days because I had many other commitments, but recently I’ve been focusing on supervised learning practice to test my knowledge. Creating a single test file takes more time than I expected because there are many terms, and I want to write down precise definitions — I won’t move on until I fully understand every detail of each topic. I’m also busy, but this is my last week to study before I leave for two weeks, during which I won’t be able to study at all. Why do I have to deal with so many distractions? Can’t I just stay home and focus on studying for my future?
+
+## 08/05/2025
+
+The past few days, I was fully focused on launching my website — I spent all my time working on it. Today, I have a training session, and afterward I’m staying over at a friend’s place. Tomorrow, if I wrap up the remaining website tasks, I’ll return to studying! My main priorities are continuing this AI journey, practicing C++ — since it's the only language I’ll be able to use next year and I’m still not fully comfortable with it — and working on DSA problems daily. But I’ll only have 2–3 days to really focus before another 2 weeks where I won’t be able to study. Is it weird that I’d rather stay home and study than go to these camps? It probably is.
+
+## 08/14/2025
+
+Yes, I’m alive. It might seem like I’m getting lazier and lazier, but that’s not the case. I was working on my website, then went to a handball camp, came back yesterday, and tomorrow I’m leaving for a week at a math camp. As much as I want to study, I just can’t right now. I have so many things going on, and I’m constantly busy. Even after this math camp, I have my friend’s birthday, a family event, and then school starts… Summer is short.

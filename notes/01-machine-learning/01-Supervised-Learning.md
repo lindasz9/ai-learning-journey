@@ -29,7 +29,7 @@ Each data point includes both the input (features) and the correct output (label
 
 ### 🔹 Linear Regression
 - **How it works**: Models a linear relationship (`y = wx + b`) between input features and the target.
-- **When to use**: Simple problems with continuous target values and a linear relationship between inputs and output.
+- **When to use**: Simple problems with continuous target values where there is a linear relationship between inputs and output.
 - **Strengths**:  
   - Easy to implement  
   - Easy to interpret  
@@ -44,7 +44,7 @@ Each data point includes both the input (features) and the correct output (label
 
 ### 🔹 Ridge & Lasso Regression
 - **How it works**: Add *regularization* terms to linear regression to penalize large *coefficients*.
-- **When to use**: High-dimensional data or when multicollinearity is present.
+- **When to use**: High-dimensional data or when *multicollinearity* is present.
 - **Strengths**:  
   - Reduces overfitting  
   - Improves generalization  
@@ -59,7 +59,7 @@ Each data point includes both the input (features) and the correct output (label
 
 ---
 
-### 🔹 Support Vector Regression (SVR)
+### 🔹 *Support Vector* Regression (SVR)
 - **How it works**: Fits a function within a margin (*epsilon*) around the target. Only penalizes predictions outside that margin.
 - **When to use**: Regression tasks where you want to control the tolerance for prediction error.
 - **Strengths**:  
@@ -67,7 +67,9 @@ Each data point includes both the input (features) and the correct output (label
   - Works with non-linear relationships using kernels  
 - **Weaknesses**:  
   - Computationally expensive  
-  - Sensitive to parameter tuning  
+  - Sensitive to parameter tuning
+- **Extra**:
+  - **Epsilon**: A margin of tolerance within which no penalty is given for errors. 
 
 <img src="https://miro.medium.com/max/552/0*407C6bjGggCsN92U.png" height="300"/>
 
@@ -76,7 +78,7 @@ Each data point includes both the input (features) and the correct output (label
 ## 📙 Classification Algorithms
 
 ### 🔹 Logistic Regression
-- **How it works**: Calculates probability using the *sigmoid function*, mapping predictions between 0 and 1. Classifies based on a threshold.
+- **How it works**: Uses the linear regression formula to compute a score, then applies the *sigmoid function* to map this score to a probability between 0 and 1.
 - **When to use**: Binary or multi-class classification with linearly separable classes.
 - **Strengths**:  
   - Simple  
@@ -91,7 +93,7 @@ Each data point includes both the input (features) and the correct output (label
 ---
 
 ### 🔹 k-Nearest Neighbors (kNN)
-- **How it works**: Classifies a point based on the majority class among its k nearest neighbors in the feature space.
+- **How it works**: Classifies a point based on the majority class among its k nearest neighbors in the *feature space*. The optimal k value is selected using *cross-validation*.
 - **When to use**: Small datasets where relationships between points are intuitive.
 - **Strengths**:  
   - No training phase  
@@ -102,8 +104,7 @@ Each data point includes both the input (features) and the correct output (label
   - Sensitive to irrelevant features  
   - Sensitive to feature scaling  
 - **Extra**:  
-  - **Cross-validation**: Evaluates model reliability and helps tune *k*.  
-  - **Euclidean distance**: Measures distance between points to find neighbors.  
+  - **Euclidean distance**: A type of distance metric used to measure the straight-line distance between two points in a multi-dimensional space.
 
 <img src="https://i0.wp.com/spotintelligence.com/wp-content/uploads/2023/08/k-nearest-neighbours-1024x576.webp?resize=1024%2C576&ssl=1" height="300"/>
 
@@ -128,7 +129,7 @@ Each data point includes both the input (features) and the correct output (label
 - **Strengths**:  
   - Fast  
   - Scalable  
-  - Works well with high-dimensional sparse data  
+  - Works well with high-dimensional sparse data
 - **Weaknesses**:  
   - Assumes independence between features (rarely true in real life)  
 - **Types**:  
@@ -140,9 +141,9 @@ Each data point includes both the input (features) and the correct output (label
 
 ---
 
-### 🔹 Support Vector Machines (SVM)
+### 🔹 *Support Vector* Machines (SVM)
 - **How it works**: Finds the optimal *hyperplane* that separates classes with the maximum margin. Uses *kernel* trick for non-linear problems.
-- **When to use**: Medium-sized datasets with clear class separation or high-dimensional feature spaces.
+- **When to use**: Medium-sized datasets with clear class separation or high-dimensional *feature spaces*.
 - **Strengths**:  
   - Effective in high dimensions  
   - Flexible via kernels  
@@ -152,6 +153,8 @@ Each data point includes both the input (features) and the correct output (label
 - **Types**:  
   - **Linear SVM**  
   - **Non-linear SVM**  
+- **Extra**:
+  - **Support vector**: A data point from a class that lies closest to the decision boundry.
 
 <img src="https://databasecamp.de/wp-content/uploads/svm.png" height="300"/>
 
@@ -199,16 +202,22 @@ Each data point includes both the input (features) and the correct output (label
 ### Regression:
 - **MSE (Mean Squared Error)**: Average of squared errors
 - **RMSE**: Square root of MSE
-- **MAE**: Average of absolute errors
-- **R² Score**: Proportion of variance explained by the model
+- **MAE**: Mean absolute errors
+- **R² Score**: Proportion of variance in the target variable explained by the model.
 
 ### Classification:
-- **Accuracy**: (Correct predictions) / (Total predictions)
+- **Accuracy**: (TP + TN) / (P + N)
 - **Precision**: TP / (TP + FP)
 - **Recall**: TP / (TP + FN)
 - **F1-Score**: Harmonic mean of precision and recall
 - **AUC (Area Under the ROC Curve)**: Measures the ability of the classifier to distinguish between classes across all thresholds
-- **Confusion Matrix**: Table comparing predicted vs actual labels
+  - **ROC Curve**: Plots TPR (True Positive Rate) and FPR (False Positive Rate) at all thresholds
+    - **TPR**: TP / (TP + FN)
+    - **FPR**: FP / (FP + TN)
+
+<img src="https://www.nomidl.com/wp-content/uploads/2022/12/image-4.png" height="300"/>
+
+- **Confusion Matrix**: A 2x2 table that compares TP, FP, FN and TN labels.
 
 <img src="https://miro.medium.com/max/2560/1*mdtqR2kyElMd0cCGM4gtuw.jpeg" height="300"/>
 
@@ -216,18 +225,21 @@ Each data point includes both the input (features) and the correct output (label
 
 ## 🧠 Important Concepts
 
-- **Bagging**: Short for bootstrap aggregating; a technique to improve model stability by training multiple models on random subsets of data.  
-- **Baseline model**: A simple model used as a reference point to compare the performance of more complex models. It helps determine if a new model actually improves predictions.  
+- **Bagging (bootstrap aggregating)**: The process of training multiple copies of a model on different bootstrap samples and aggregating their predictions to improve accuracy and reduce overfitting.
+  - **Bootstrap samples**: Random subsets of the data sampled with replacement.
+- **Baseline model**: A simple model used for comparison, to check whether more complex models actually improve performance.
 - **Bayes' theorem**: A formula that describes the probability of an event based on prior knowledge of conditions related to the event.  
 - **Coefficient**: A numeric factor multiplying a feature in a model equation.  
 - **Cross-validation**: A model evaluation method used to assess how the results of a statistical analysis will generalize to an independent data set. Often used to find the best hyperparameters such as k in kNN.  
-- **Decision boundaries**: The hypersurfaces or curves that separate different classes in a classification problem. A model uses decision boundaries to assign labels to input data points.  
-- **Epsilon**: A margin of tolerance in Support Vector Regression within which no penalty is given for errors.  
+  - **k-fold**: A method where the dataset is split into k equal parts. The model is trained on k−1 parts and tested on the remaining part. This process repeats k times, and the average result tells us how good the model is.
+- **Decision boundaries**: The hypersurfaces or curves that separate different classes in a classification problem. A model uses decision boundaries to assign labels to input data points.
+- **Feature space**: The multi-dimensional space where each dimension represents one feature of the data. Each data point is a single point in this space, based on its feature values.
 - **Gradient descent**: A method used to make a model better by slowly changing its parameters to reduce mistakes.
-- **Hyperplane**: A flat, (n-1)-dimensional subspace that separates classes in classification problems, especially in Support Vector Machines (SVM).  
+- **Hyperplane**: A flat, (n-1)-dimensional subspace that separates classes in classification problems.  
 - **Histogram**: A graph that groups data into bins and shows how many data points fall into each, helping visualize the data’s distribution.  
 - **Kernel**: A function that transforms data into a higher-dimensional space to make it easier to find a linear separation (linear/polynomial/RBF).
-- **Loss Function**: A function measuring how far predictions are from actual values.  
+- **Loss function**: A function measuring how far predictions are from actual values.  
+- **Multicollarity**: When two or more features in a regression model are highly correlated, making it difficult to determine their individual effects on the target variable.
 - **Optimization**: The process of adjusting model parameters to minimize the loss function.  
 - **Overfitting**: When a model fits the training data too closely, capturing noise instead of the underlying pattern, resulting in poor generalization.  
 - **Pruning**: The process of removing parts of a decision tree that provide little predictive power to reduce complexity and prevent overfitting.  
