@@ -99,3 +99,7 @@ The past few days, I was fully focused on launching my website — I spent all m
 ## 08/14/2025
 
 Yes, I’m alive. It might seem like I’m getting lazier and lazier, but that’s not the case. I was working on my website, then went to a handball camp, came back yesterday, and tomorrow I’m leaving for a week at a math camp. As much as I want to study, I just can’t right now. I have so many things going on, and I’m constantly busy. Even after this math camp, I have my friend’s birthday, a family event, and then school starts… Summer is short.
+
+## 08/25/2025
+
+I know it might seem like I’m not disciplined or motivated enough to study, but that’s not the case. Over the past two weeks, I’ve been at a handball camp and an international math camp. Now that I’m finally back home, I still have many things to take care of, but I’ll do my best to also stay focused on this AI journey.
