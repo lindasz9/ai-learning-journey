@@ -103,3 +103,7 @@ Yes, I’m alive. It might seem like I’m getting lazier and lazier, but that�
 ## 08/25/2025
 
 I know it might seem like I’m not disciplined or motivated enough to study, but that’s not the case. Over the past two weeks, I’ve been at a handball camp and an international math camp. Now that I’m finally back home, I still have many things to take care of, but I’ll do my best to also stay focused on this AI journey.
+
+## 08/26/2025
+
+I realized that I’ve been rushing unnecessarily. A slower, more thorough approach is usually better than quickly rushing through everything. So I’m going to slow down a bit and review what I’ve learned so far. In the `practice` folder, I’ve prepared questions for each topic, and my plan is to answer these questions, focusing on a different topic each day.

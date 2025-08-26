@@ -23,7 +23,7 @@ Elastic Net Regression
 Support Vector Regression (SVR)
 > Another algortihm to reduce overfitting in linear regression. This defines a margin (called epsilon) around the target values. The model only penalizes errors (predictions) that fall outside this margin.
 
-Epsilon
+- Epsilon
 > The margin of tolerance around the predicted values where only outer errors are penalized.
 
 Logistic Regression
@@ -32,7 +32,7 @@ Logistic Regression
 k-Nearest Neighbors (kNN)
 > A classification algorithm where the class of a new data point is determined by its k nearest neighbors in the feature space. It's used on simple, small datasets. It doesn’t require a real training phase and is easy to implement, but can be slow and sensitive to noise or feature scaling.
 
-Euclidean distance
+- Euclidean distance
 > A type of distance metric that measures the straight-line distance between two points in a multi-dimensional space.
 
 Decision Trees
@@ -44,7 +44,7 @@ Naive Bayes
 Support Vector Machines (SVM)
 > A classification algorithm that finds the optimal hyperplane to separate classes with the largest possible margin, maximizing the distance between the closest points of each class. We use it when classes can clearly be separated. It's effective with high dimensional data, but it's computationally expensive.
 
-Support vector
+- Support vector
 > A data point from a class that lies closest to the decision boundry.
 
 4. How does these ensemble methods work? When do we use them? What are some strengts and weaknesses?
@@ -84,7 +84,7 @@ F1-Score
 AUC (Area Under the ROC Curve)
 > Measures the ability of the model to distinguish between classes at all thresholds.
 
-ROC Curve
+- ROC Curve
 > Plots TPR (TP / (TP + FN)) and FPR (FP / (FP + TN)) at all thresholds.
 
 Confusion Matrix
