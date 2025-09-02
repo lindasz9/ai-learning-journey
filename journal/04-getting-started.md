@@ -107,3 +107,13 @@ I know it might seem like I’m not disciplined or motivated enough to study, bu
 ## 08/26/2025
 
 I realized that I’ve been rushing unnecessarily. A slower, more thorough approach is usually better than quickly rushing through everything. So I’m going to slow down a bit and review what I’ve learned so far. In the `practice` folder, I’ve prepared questions for each topic, and my plan is to answer these questions, focusing on a different topic each day.
+
+## 08/27/2025
+
+I’ve restructured the `practice` folder so that it now contains two subfolders: `questions` and `answers`. Each day, as a practice, I’ll review some files from the `questions` folder.
+
+## 09/02/2025
+
+Okay, I’ll be honest. Yes, I had other things to do, but I could have also made time for this AI learning journey. Right now, I’m focused on competitive programming in C++, which is more important at the moment, but later, AI will take priority. Until now, I’ve concentrated mainly on competitive programming, but I do need to dedicate time to AI as well.
+
+I want to get back on track, but at the beginning, I was rushing through everything — I was just making notes without truly studying them. Maybe I focused too much on theory and not enough on coding, so I definitely need to slow down. My plan is to start from the beginning, review each topic, and then write and understand the code for each theory I learn. I’m not yet sure how to schedule this or how much time to spend each day, but I’m committed to continuing this journey.

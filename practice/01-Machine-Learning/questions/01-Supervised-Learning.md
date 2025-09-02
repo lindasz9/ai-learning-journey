@@ -1,4 +1,4 @@
-# Supervised Learning Test
+# Supervised Learning - Test
 
 1. What is supervised learning?
 
