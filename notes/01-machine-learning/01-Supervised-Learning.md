@@ -38,7 +38,7 @@ Each data point includes both the input (features) and the correct output (label
   - Fails with non-linear patterns  
   - Sensitive to outliers  
 
-<img src="https://www.researchgate.net/publication/340271573/figure/fig3/AS:874657431437319@1585545990533/Linear-Regression-model-sample-illustration.ppm" height="300"/>
+<img src="https://ml-explained.com/articles/linear-regression-explained/linear_regression_example.png" height="300"/>
 
 ---
 
@@ -228,20 +228,24 @@ Each data point includes both the input (features) and the correct output (label
 - **Bagging (bootstrap aggregating)**: The process of training multiple copies of a model on different bootstrap samples and aggregating their predictions to improve accuracy and reduce overfitting.
   - **Bootstrap samples**: Random subsets of the data sampled with replacement.
 - **Baseline model**: A simple model used for comparison, to check whether more complex models actually improve performance.
-- **Bayes' theorem**: A formula that describes the probability of an event based on prior knowledge of conditions related to the event.  
-- **Coefficient**: A numeric factor multiplying a feature in a model equation.  
-- **Cross-validation**: A model evaluation method used to assess how the results of a statistical analysis will generalize to an independent data set. Often used to find the best hyperparameters such as k in kNN.  
+- **Bayes' theorem**: A formula that updates the probability of an event based on prior knowledge and new evidence.  
+- **Coefficient**: A numerical factor that multiplies a variable in a mathematical expression or term. 
+- **Cross-validation**: A way of checking how well a ML model will generalize by splitting the data into multiple train/test parts, training on some, and validating on the rest, then averaging the results. 
   - **k-fold**: A method where the dataset is split into k equal parts. The model is trained on k−1 parts and tested on the remaining part. This process repeats k times, and the average result tells us how good the model is.
-- **Decision boundaries**: The hypersurfaces or curves that separate different classes in a classification problem. A model uses decision boundaries to assign labels to input data points.
+- **Decision boundaries**: The hypersurfaces or curves that separate different classes in a classification problem.
 - **Feature space**: The multi-dimensional space where each dimension represents one feature of the data. Each data point is a single point in this space, based on its feature values.
 - **Gradient descent**: A method used to make a model better by slowly changing its parameters to reduce mistakes.
-- **Hyperplane**: A flat, (n-1)-dimensional subspace that separates classes in classification problems.  
-- **Histogram**: A graph that groups data into bins and shows how many data points fall into each, helping visualize the data’s distribution.  
+- **Hyperplane**: A flat, (n-1)-dimensional subspace that separates classes in classification problems.
+  - **Hypersurface**: A curved or nonlinear (n−1)-dimensional surface.
+- **Histogram**: A graph that groups data into bins and shows how many data points fall into each, helping visualize the data’s distribution.
+
+<img src="https://images.squarespace-cdn.com/content/v1/55b6a6dce4b089e11621d3ed/1611887632387-L44QASP3HYOAK2NPV8YZ/Histogram+example.jpg" height="300"/>
+
 - **Kernel**: A function that transforms data into a higher-dimensional space to make it easier to find a linear separation (linear/polynomial/RBF).
 - **Loss function**: A function measuring how far predictions are from actual values.  
 - **Multicollarity**: When two or more features in a regression model are highly correlated, making it difficult to determine their individual effects on the target variable.
 - **Optimization**: The process of adjusting model parameters to minimize the loss function.  
 - **Overfitting**: When a model fits the training data too closely, capturing noise instead of the underlying pattern, resulting in poor generalization.  
-- **Pruning**: The process of removing parts of a decision tree that provide little predictive power to reduce complexity and prevent overfitting.  
+- **Pruning**: The process of removing unnecessary parts of a model or search space to simplify it and reduce overfitting.
 - **Regularization**: Adding penalties to model parameters to prevent overfitting.  
 - **Sigmoid function**: A function that maps any real-valued number into a value between 0 and 1, commonly used to model probabilities. 

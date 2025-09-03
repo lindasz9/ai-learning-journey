@@ -66,7 +66,7 @@ Confusion Matrix
 
 Bagging (bootstrap aggregating)
 
-Bootstrap samples
+- Bootstrap samples
 
 Baseline model  
 
@@ -76,19 +76,25 @@ Coefficient
 
 Cross-validation  
 
-k-fold
+- k-fold
 
 Decision boundaries  
 
+Feature space
+
 Gradient descent  
 
-Hyperplane  
+Hyperplane
+
+- Hypersurface
 
 Histogram  
 
 Kernel  
 
-Loss Function  
+Loss Function
+
+Multicollarity
 
 Optimization  
 

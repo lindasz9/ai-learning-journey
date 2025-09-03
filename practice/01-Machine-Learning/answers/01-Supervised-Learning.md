@@ -4,7 +4,7 @@
 > Supervised learning is a category of ML where The model is trained on unlabeled data, meaning input-output pairs.
 
 2. What are the types of supervised learning, and what do they mean?
-> There are two types of supervised learning: Regression, where the target/label is a continuous numeric value, and there's classification, where the target/label is a categorical value/a class.
+> There are two types of supervised learning: regression, where the target/label is a continuous numeric value, and there's classification, where the target/label is a categorical value/a class.
 
 3. How does these algorithms work? When do we use them? What are some strengths and weaknesses? What do the attached concepts mean?
 
@@ -36,7 +36,7 @@ k-Nearest Neighbors (kNN)
 > A type of distance metric that measures the straight-line distance between two points in a multi-dimensional space.
 
 Decision Trees
-> A classification and also a regression algorithm that uses a tree-like structure of nodes. Each internal node splits the data based on a feature, and this process continues down the branches until a leaf node is reached, which gives the final categorical prediction. We use it when the features are both numerical and categorical, and they contain interactions with the target. It's easy to interpret and can handle both regressiona dn classification problems, but it's prone to overfitting.
+> A classification and also a regression algorithm that uses a tree-like structure of nodes. Each internal node splits the data based on a feature, and this process continues down the branches until a leaf node is reached, which gives the final categorical prediction. We use it when the features are both numerical and categorical, and they contain interactions with the target. It's easy to interpret and can handle both regression and classification problems, but it's prone to overfitting.
 
 Naive Bayes
 > A classification algorithm based on Bayes' Theorem, assuming that all features are conditionally independent given the class label. We use it for text classification problems. It is fast and performs well with high-dimensional data, but it is only effective when the features are independent of each other.
@@ -58,7 +58,7 @@ Gradient Boosting
 5. What do these evaluation metrics mean?
 
 MSE
-> Mean squared error (regression)
+> Mean squared error
 
 RMSE
 > The square root of the mean squared error
@@ -95,53 +95,62 @@ Confusion Matrix
 Bagging (bootstrap aggregating)
 > The process of training multiple copies of a model on different bootstrap samples and aggregating their predictions to improve accuracy and reduce overfitting.
 
-Bootstrap samples
+- Bootstrap samples
 > Random subsets of the data sampled with replacement.
 
 Baseline model  
 > A simple model used for comparison, to check whether more complex models actually improve performance.
 
 Bayes' theorem  
->  
+> A formula that updates the probability of an event based on prior knowledge and new evidence.
 
 Coefficient  
->  
+> A numerical factor that multiplies a variable in a mathematical expression or term.
 
 Cross-validation  
->  
+> A way of checking how well a ML model will generalize by splitting the data into multiple train/test parts, training on some, and validating on the rest, then averaging the results.
 
-k-fold
-> 
+- k-fold
+> A method where the dataset is split into k equal parts. The model is trained on k−1 parts and tested on the remaining part. This process repeats k times, and the average result tells us how good the model is.
 
 Decision boundaries  
->  
+> The hypersurfaces or curves that separate different classes in a classification problem.
+
+Feature space
+> The multi-dimensional space where each dimension represents one feature of the data. Each data point is a single point in this space, based on its feature values.
 
 Gradient descent  
->  
+> A method used to make a model better by slowly changing its parameters to reduce mistakes.
 
 Hyperplane  
->  
+> A flat, (n-1)-dimensional subspace that separates classes in classification problems.
+
+- Hypersurface
+> A curved or nonlinear (n−1)-dimensional surface.
 
 Histogram  
->  
+> A graph that groups data into bins and shows how many data points fall into each, helping visualize the data’s distribution.
 
 Kernel  
->  
+> A function that transforms data into a higher-dimensional space to make it easier to find a linear separation (linear/polynomial/RBF).
 
 Loss Function  
->  
+> A function measuring how far predictions are from actual values. 
+
+Multicollarity
+> When two or more features in a regression model are highly correlated, making it difficult to determine their individual effects on the target variable.
 
 Optimization  
->  
+> The process of adjusting model parameters to minimize the loss function.
 
 Overfitting  
->  
+> When a model fits the training data too closely, capturing noise instead of the underlying pattern, resulting in poor generalization.
 
 Pruning  
->  
+> The process of removing unnecessary parts of a model or search space to simplify it and reduce overfitting.
 
 Regularization  
->  
+> Adding penalties to model parameters to prevent overfitting.  
 
 Sigmoid function  
->  
+> A function that maps any real-valued number into a value between 0 and 1, commonly used to model probabilities. 
