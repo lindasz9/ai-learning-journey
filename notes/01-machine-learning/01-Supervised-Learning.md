@@ -50,9 +50,9 @@ Each data point includes both the input (features) and the correct output (label
   - Improves generalization  
 - **Weaknesses**:  
   - Still assumes linear relationships  
-- **Types**:  
-  - **Lasso**: L1 penalty — can shrink some *coefficients* to zero (feature selection).  
+- **Types**:   
   - **Ridge**: L2 penalty — shrinks *coefficients* but keeps all.  
+  - **Lasso**: L1 penalty — can shrink some *coefficients* to zero (feature selection). 
   - **Elastic Net**: Combines L1 and L2 penalties — balances feature selection and coefficient shrinkage.  
 
 <img src="https://images.datacamp.com/image/upload/v1648205672/image18_a3zz7y.png" height="300"/>
@@ -132,10 +132,10 @@ Each data point includes both the input (features) and the correct output (label
   - Works well with high-dimensional sparse data
 - **Weaknesses**:  
   - Assumes independence between features (rarely true in real life)  
-- **Types**:  
-  - **Gaussian NB**  
-  - **Multinomial NB**  
-  - **Bernoulli NB**  
+- **Types**:
+  - **Gaussian NB**: Assumes features are continuous and follow a normal (Gaussian) distribution. Used for numeric data.
+  - **Multinomial NB**: Assumes features are counts or frequencies, mostly used in text classification.
+  - **Bernoulli NB**: Assumes features are binary, used in text classification (word presence).
 
 <img src="https://databasecamp.de/wp-content/uploads/naive-bayes-overview.png" height="300"/>
 
@@ -189,9 +189,9 @@ Each data point includes both the input (features) and the correct output (label
   - Can overfit if not tuned properly  
   - More complex to configure and understand  
 - **Types**:  
-  - **XGBoost**: Adds regularization, early stopping, GPU support  
-  - **LightGBM**: Faster for large datasets via histogram and leaf-wise growth  
-  - **CatBoost**: Handles categorical features automatically, reduces prediction shift, good for heterogeneous data  
+  - **XGBoost**: Fast and efficient, adds regularization, early stopping, GPU support.
+  - **LightGBM**: Faster for large datasets via *histogram* and leaf-wise growth.
+  - **CatBoost**: Handles categorical features directly, reduces prediction shift, good for heterogeneous data.
 
 <img src="https://rohitgr7.github.io/content/images/2019/03/Screenshot-from-2019-03-27-23-09-47-1.png" height="300"/>
 

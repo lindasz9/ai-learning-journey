@@ -7,3 +7,13 @@ I decided to adjust my study structure. Instead of focusing on writing new theor
 📝 Machine Learning Overview
 
 Some topics don’t need to be reviewed many times because they’re simpler — like the machine learning overview — but since I’m starting from the beginning, I’ll go through everything once, review it all, and then move forward.
+
+📝 Supervised Learning
+
+## 09/04/2025
+
+📝 Supervised Learning in Python
+
+## 09/05/2025
+
+📝 Unsupervised Learning

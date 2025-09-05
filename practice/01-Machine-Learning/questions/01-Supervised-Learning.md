@@ -8,9 +8,9 @@
 
 Linear Regression
 
-Lasso Regression
-
 Ridge Regression
+
+Lasso Regression
 
 Elastic Net Regression
 

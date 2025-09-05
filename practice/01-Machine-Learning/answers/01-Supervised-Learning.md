@@ -11,11 +11,11 @@
 Linear Regression
 > A regression algorithm, that finds a linear pattern (y = wx + b) between the input features and the target, and then makes predictions based on this linear model. We use it for simple, regression problems where there is a linear relationship between inputs and output. It's simple and easy to implement and to visualize, but it's sensitive to outliers and only works on linear data.
 
-Lasso Regression
-> An algorithms that adds regularization to linear regression in order to reduce large coefficients and avoid overfitting. Some coefficients can even reduce to zero. We use it when we want to perform feature selection or reduce model complexity, especially in high-dimensional data. It reduces overfitting, but still assumes linear relationship.
-
 Ridge Regression
 > Another algorithm that adds regularization to linear regression by shrinking the coefficients, however, in this case, the coefficients are reduced but never shrink all the way to zero.
+
+Lasso Regression
+> An algorithms that adds regularization to linear regression in order to reduce large coefficients and avoid overfitting. Some coefficients can even reduce to zero. We use it when we want to perform feature selection or reduce model complexity, especially in high-dimensional data. It reduces overfitting, but still assumes linear relationship.
 
 Elastic Net Regression
 > A third regularization algorithm that combines both lasso and ridge regression penalties. It can both shrink coefficients and perform feature selection by allowing some coefficients to become zero while others are only reduced.

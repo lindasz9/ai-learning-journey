@@ -4,10 +4,6 @@
 
 2. What are the main categories of unsupervised learning, and what do they mean?
 
-Clustering
-
-Dimensionality Reduction
-
 3. How do these clustering algorithms work? When do we use them? What are some strengths and weaknesses? What do the attached concepts mean?
 
 k-Means Clustering
@@ -24,9 +20,11 @@ DBSCAN (Density-Based Spatial Clustering of Applications with Noise)
 
 - minPts   
 
-4. How do these dimensionality reduction techniques work? When do we use them? What are some strengths and weaknesses? What do the attached concepts mean?
+4. How do these dimensionality reduction techniques work? When do we use them? What are some strengths and weaknesses?
 
 PCA (Principal Component Analysis)
+
+- Principal component  
 
 t-SNE (t-distributed Stochastic Neighbor Embedding)
 
@@ -61,7 +59,5 @@ Local structure
 Noise  
 
 Outlier  
-
-Principal component  
 
 Variance  

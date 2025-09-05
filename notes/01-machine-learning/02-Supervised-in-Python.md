@@ -52,11 +52,8 @@ print("MSE:", mean_squared_error(y_test, y_pred))
 ```python
 from sklearn.linear_model import Ridge
 
-model = Ridge(alpha=1.0)
+model = Ridge(alpha=1.0)  # regularization strength
 model.fit(X_train, y_train)
-y_pred = model.predict(X_test)
-
-print("MSE:", mean_squared_error(y_test, y_pred))
 ```
 
 #### Lasso Regression
@@ -65,20 +62,15 @@ from sklearn.linear_model import Lasso
 
 model = Lasso(alpha=0.1)
 model.fit(X_train, y_train)
-y_pred = model.predict(X_test)
-
-print("MSE:", mean_squared_error(y_test, y_pred))
 ```
 
 #### Elastic Net
 ```python
 from sklearn.linear_model import ElasticNet
 
-model = ElasticNet(alpha=0.1, l1_ratio=0.5)
+model = ElasticNet(alpha=0.1, 
+                   l1_ratio=0.5)  # balance between L1 and L2 regularization
 model.fit(X_train, y_train)
-y_pred = model.predict(X_test)
-
-print("MSE:", mean_squared_error(y_test, y_pred))
 ```
 
 ### 🔹 Support Vector Regression (SVR)
@@ -87,10 +79,12 @@ from sklearn.svm import SVR
 from sklearn.preprocessing import StandardScaler
 
 scaler = StandardScaler()
-X_train_scaled = scaler.fit_transform(X_train)
-X_test_scaled = scaler.transform(X_test)
+X_train_scaled = scaler.fit_transform(X_train)  # compute mean and scale training data
+X_test_scaled = scaler.transform(X_test)  # scale using the same mean
 
-model = SVR(kernel='rbf', C=1.0, epsilon=0.2)
+model.SVR(kernel='rbf',  # non-linear mapping using radial basis function
+          C=1.0,  # regularization strength
+          epsilon=0.2)  # margin of tolerance
 model.fit(X_train_scaled, y_train)
 y_pred = model.predict(X_test_scaled)
 
@@ -111,7 +105,7 @@ from sklearn.metrics import accuracy_score
 X, y = load_iris(return_X_y=True)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-model = LogisticRegression(max_iter=200)
+model = LogisticRegression(max_iter=200)  # maximum number of iterations for the solver to converge
 model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
 
@@ -160,12 +154,13 @@ from sklearn.feature_extraction.text import CountVectorizer
 texts = ["spam email", "important project", "buy cheap", "urgent money offer"]
 labels = [1, 0, 1, 1]
 
-vectorizer = CountVectorizer()
-X = vectorizer.fit_transform(texts)
+vectorizer = CountVectorizer()  # convert text to a matrix of word counts
+X = vectorizer.fit_transform(texts)  # transform the texts into feature vectors
 
 model = MultinomialNB()
 model.fit(X, labels)
 pred = model.predict(X)
+
 print("Predictions:", pred)
 ```
 
@@ -174,8 +169,9 @@ print("Predictions:", pred)
 from sklearn.naive_bayes import BernoulliNB
 
 model = BernoulliNB()
-model.fit(X_train > 1.0, y_train)  # Binarize features
+model.fit(X_train > 1.0, y_train)  # binarize features: features that are greater than 1.0 become true
 pred = model.predict(X_test > 1.0)
+
 print("Accuracy:", accuracy_score(y_test, pred))
 ```
 
@@ -206,7 +202,8 @@ print("Accuracy:", accuracy_score(y_test, pred))
 ```python
 from sklearn.ensemble import RandomForestClassifier
 
-model = RandomForestClassifier(n_estimators=100, random_state=42)
+model = RandomForestClassifier(n_estimators=100,  # number of trees
+                               random_state=42)
 model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
 
@@ -218,7 +215,8 @@ print("Accuracy:", accuracy_score(y_test, y_pred))
 ```python
 from xgboost import XGBClassifier
 
-model = XGBClassifier(use_label_encoder=False, eval_metric='mlogloss')
+model = XGBClassifier(use_label_encoder=False,  # label encoding warning
+                      val_metric='mlogloss')  # loss function
 model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
 
@@ -240,7 +238,7 @@ print("Accuracy:", accuracy_score(y_test, y_pred))
 ```python
 from catboost import CatBoostClassifier
 
-model = CatBoostClassifier(verbose=0)
+model = CatBoostClassifier(verbose=0)  # no training output
 model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
 
