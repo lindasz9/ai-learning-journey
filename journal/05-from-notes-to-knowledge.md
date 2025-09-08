@@ -17,3 +17,15 @@ Some topics don’t need to be reviewed many times because they’re simpler —
 ## 09/05/2025
 
 📝 Unsupervised Learning
+
+## 09/06/2025
+
+📝 Unsupervised Learning in Python
+
+It's so weird that I actually enjoy what I'm studying.
+
+## 09/08/2025
+
+📝 Reinforcement Learning
+
+Reinforcement learning is definitely a more complex topic. Reviewing it probably took me over two hours, and I still have some unanswered questions.

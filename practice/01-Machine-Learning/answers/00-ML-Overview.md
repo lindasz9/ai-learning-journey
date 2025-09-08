@@ -1,4 +1,4 @@
-# Machine Learning Overview Test
+# Machine Learning Overview - Test
 
 1. What is machine learning?
 > Machine learning is a subfield of AI where we solve problems with a model that we give a lot of data to. It finds patterns in that data and, based on probability, outputs the predictions without being explicitly programmed.

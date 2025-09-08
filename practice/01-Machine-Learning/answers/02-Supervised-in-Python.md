@@ -1,7 +1,6 @@
 # Supervised Learning Algorithms in Python - Test
 
 1. How do you implement **Linear Regression**?
-
 ```python
 from sklearn.linear_model import LinearRegression
 from sklearn.datasets import make_regression
@@ -21,7 +20,6 @@ print("MSE: ", mean_squared_error(y_test, y_pred))
 2. How do you implement **Ridge, Lasso, and Elastic Net Regression**?
   
 - Ridge Regression  
-
 ```python
 from sklearn.linear_model import Ridge
 
@@ -30,7 +28,6 @@ model.fit(X_train, y_train)
 ```
 
 - Lasso Regression  
-
 ```python
 from sklearn.linear_model import Lasso
 
@@ -39,7 +36,6 @@ model.fit(X_train, y_train)
 ```
 
 - Elastic Net  
-
 ```python
 from sklearn.linear_model import ElasticNet
 
@@ -48,7 +44,6 @@ model.fit(X_train, y_train)
 ```
 
 3. How do you implement **Support Vector Regression (SVR)**?
-
 ```python
 from sklearn.svm import SVR
 from sklearn.preprocessing import StandardScaler
@@ -65,7 +60,6 @@ print("MSE: ", mean_squared_error(y_test, y_pred))
 ```
 
 4. How do you implement **Logistic Regression**?
-
 ```python
 from sklearn.linear_model import LogisticRegression
 from sklearn.datasets import load_iris
@@ -83,7 +77,6 @@ print("Accuracy: ", accuracy_score(y_test, y_pred))
 ```
 
 5. How do you implement **k-Nearest Neighbors (kNN)**?
-
 ```python
 from sklearn.neighbors import KNeighborsClassifier
 
@@ -92,7 +85,6 @@ model.fit(X_train, y_train)
 ```
 
 6. How do you implement **Decision Trees**?
-
 ```python
 from sklearn.tree import DecisionTreeClassifier
 
@@ -103,7 +95,6 @@ model.fit(X_train, y_train)
 7. How do you implement **Naive Bayes**?
   
 - GaussianNB  
-
 ```python
 from sklearn.niave_bayes import GaussianNB
 
@@ -112,7 +103,6 @@ model.fit(X_train, y_train)
 ```
 
 - MultinomialNB  
-
 ```python
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.feature_extraction.text import CountVectorizer
@@ -131,7 +121,6 @@ print("Predictions: ", pred)
 ```
 
 - BernoulliNB  
-
 ```python
 from sklearn.naive_bayes import BernoulliNB
 
@@ -145,7 +134,6 @@ print("Accuracy:", accuracy_score(y_test, pred))
 8. How do you implement **Support Vector Machines (SVM)**?
   
 - Linear SVM  
-
 ```python
 from sklearn.svm import SVC
 
@@ -154,14 +142,12 @@ model.fit(X_train, y_train)
 ```
 
 - Non-linear SVM  
-
 ```python
 model = SVC(kernel='rbf')
 model.fit(X_train, y_train)
 ```
 
 9. How do you implement a **Random Forest Classifier**?
-
 ```python
 from sklearn.ensemble import RandomForestClassifier
 
@@ -172,7 +158,6 @@ model.fit(X_train, y_train)
 10. How do you implement **Gradient Boosting Methods**?
   
 - XGBoost  
-
 ```python
 from xgboost import XGBClassifier
 
@@ -181,7 +166,6 @@ model.fit(X_train, y_train)
 ```
 
 - LightGBM  
-
 ```python
 from lightgbm import LGBMClassifier
 
@@ -190,7 +174,6 @@ model.fit(X_train, y_train)
 ```
 
 - CatBoost  
-
 ```python
 from catboost import CatBoostClassifier
 

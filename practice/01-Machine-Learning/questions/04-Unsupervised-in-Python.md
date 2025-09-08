@@ -3,10 +3,6 @@
 1. How do you implement **k-Means Clustering**?
 
 2. How do you implement **Hierarchical Clustering**?
-  
-- Agglomerative  
-
-- Divisive  
 
 3. How do you implement **DBSCAN (Density-Based Spatial Clustering of Applications with Noise)**?
 

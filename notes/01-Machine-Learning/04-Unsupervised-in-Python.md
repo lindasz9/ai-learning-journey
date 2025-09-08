@@ -65,7 +65,7 @@ print("Labels:", labels)
 ```python
 from sklearn.decomposition import PCA
 
-pca = PCA(n_components=2)
+pca = PCA(n_components=2)  # numebr of axes
 X_pca = pca.fit_transform(X)
 
 print("Explained Variance Ratio:", pca.explained_variance_ratio_)

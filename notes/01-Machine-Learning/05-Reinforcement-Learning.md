@@ -35,10 +35,10 @@ The core idea is learning a strategy (called a *policy*) to maximize cumulative 
 - Can be deterministic (fixed) or stochastic (random).
 
 ### 🔹 Value Function
-- Estimates how good it is to be in a *state* (or to perform an *action*) in terms of expected future *rewards*.
+- Estimates the expected cumulative *reward* from a *state* if following a *policy*.
 
 ### 🔹 Q-Function (*Action-Value* Function)
-- Estimates the expected *reward* of taking a specific *action* in a specific *state* and following a *policy* thereafter.
+- Estimates the expected cumulative *reward* from a *state*, taking a specific *action* first, and then following a *policy*.
 
 <img src="https://www.j-labs.pl/wp-content/uploads/2023/02/qlearning_02.jpg" height="300"/>
 
@@ -46,7 +46,7 @@ The core idea is learning a strategy (called a *policy*) to maximize cumulative 
 
 ## 🔄 The RL Loop
 
-1. The *agent* observes the *state* from the *environment*.
+1. The *agent* observes the *state* of the *environment*.
 2. It selects an *action* using its current *policy*.
 3. The *environment* transitions to a new *state* and gives a *reward*.
 4. The *agent* uses this experience to improve its *policy*.
@@ -74,23 +74,23 @@ The core idea is learning a strategy (called a *policy*) to maximize cumulative 
 - **Stochastic**: Outcomes have randomness, requiring probabilistic modeling.
   - Policy Gradient Methods
 
-### 🔹 On-Policy vs Off-Policy
+### 🔹 Off-Policy vs On-Policy
 - **Off-policy**: Learning from actions taken by a different *policy*.
   - Q-Learning, DQN, SARSA
 - **On-policy**: Learning from actions taken by the current *policy*.
-  - Policy Gradient Methods, Actor-Critic Methods
+  - Policy Gradient Methods, *Actor*-Critic Methods
 
-### 🔹 Value-based vs Policy-based vs Actor-Critic
-- **Value-based**: Learn a *value function* to derive the *policy* indirectly.
+### 🔹 Value-based vs Policy-based vs *Actor*-Critic
+- **Value-based**: Learns a *value function* (*state* or *state-action* scores) and acts greedily with respect to it.
   - Q-Learning, DQN, SARSA
-- **Policy-based**: Learn the *policy* directly without using a *value function*.
+- **Policy-based**: Learns the *policy* directly as a probability distribution over *actions*, optimizing it to maximize *reward*.
   - Policy Gradient Methods
-- **Actor-Critic**: Combines both value-based and *policy*-based methods by having an *actor* (*policy*) and a *critic* (*value function*) learning together.
-  - Actor-Critic Methods
+- **Actor-Critic**: Combines both value-based and *policy*-based methods by having an *actor* (*policy*) that learns the *policy* and a *critic* (*value function*) that evaluates *actions/states* to guide the *Actor*.
+  - *Actor*-Critic Methods
 
 ### 🔹 Model-free vs Model-based
 - **Model-free**: Learns *policies* or *value functions* without an explicit model of the *environment*.
-  - Q-Learning, DQN, SARSA, Policy Gradient Methods, Actor-Critic Methods
+  - Q-Learning, DQN, SARSA, Policy Gradient Methods, *Actor*-Critic Methods
 - **Model-based**: Uses a model of the *environment* to plan and improve *policies*.
 
 ---
@@ -99,11 +99,11 @@ The core idea is learning a strategy (called a *policy*) to maximize cumulative 
 
 ### 🔹 Q-Learning
 - **How it works**: Learns the *Q-function* that maps *state-action* pairs to expected *rewards*. Updates Q-values using the *Bellman equation*.
-- **Bellman equation**:
+- **Bellman equation**: Expresses the value of a state or state-action as the immediate reward plus *discounted* future rewards.
   $$
   Q(s, a) \leftarrow Q(s, a) + \alpha \left[ r + \gamma \max_{a'} Q(s', a') - Q(s, a) \right]
   $$
-- **When to use**: Discrete *action* spaces and when you don’t need to follow the current *policy* (off-*policy*).
+- **When to use**: When the *action space* is limited, and when you don't have to follow the current *policy* (*off-policy*).
 - **Strengths**:  
   - Simple to implement  
   - Proven *convergence* under certain conditions  
@@ -112,8 +112,8 @@ The core idea is learning a strategy (called a *policy*) to maximize cumulative 
   - Needs *exploration* strategy like *ε-greedy*
 
 ### 🔹 Deep Q-Networks (DQN)
-- **How it works**: Uses deep *neural networks* to approximate the Q-function. Adds techniques like *experience replay* and *target networks*.
-- **When to use**: Large or continuous *state* spaces (e.g., video games).
+- **How it works**: Uses deep neural networks to approximate the *Q-function*.
+- **When to use**: Large or continuous *state spaces* (e.g., video games).
 - **Strengths**:  
   - Handles high-dimensional input (e.g., images)  
   - Achieves human-level performance in some tasks  
@@ -150,7 +150,7 @@ The core idea is learning a strategy (called a *policy*) to maximize cumulative 
   $$
   \nabla J(\theta) = \mathbb{E}_{\pi_{\theta}} \left[ \nabla_{\theta} \log \pi_{\theta}(a|s) Q^{\pi}(s, a) \right]
   $$
-- **When to use**: Continuous *action* spaces or when stochastic *policies* are beneficial.
+- **When to use**: Continuous *action spaces* or when stochastic *policies* are beneficial.
 - **Strengths**:  
   - Can learn stochastic *policies*  
   - Suitable for continuous *actions*  
@@ -160,7 +160,7 @@ The core idea is learning a strategy (called a *policy*) to maximize cumulative 
 
 ### 🔹 *Actor-Critic* Methods
 - **How it works**: Combines *policy gradient* (*actor*) with a *value function* (*critic*) to reduce variance and improve stability.
-- **When to use**: Complex *environments* with continuous *actions*.
+- **When to use**: Complex *environments* with continuous *action dspace*.
 - **Strengths**:  
   - Balances bias and variance  
   - More stable learning than pure *policy* gradients  
@@ -177,20 +177,21 @@ The core idea is learning a strategy (called a *policy*) to maximize cumulative 
 
 - **Cumulative *Reward***: Total *reward* collected by the *agent* across an *episode* or time period.
 - **Average *Reward***: Mean *reward* per step or per *episode* over time.
-- **Return**: Sum of future discounted *rewards*:
+- **Return**: Sum of future *discounted* *rewards*:
   $$
   G_t = r_{t+1} + \gamma r_{t+2} + \gamma^2 r_{t+3} + \dots
   $$
 - **Success Rate**: Ratio of successful *episodes* to total *episodes*.
-- **Sample Efficiency**: Amount of experience needed to reach a performance threshold.
-- **Learning Curve**: Graph showing *agent* performance over training *episodes*.
+- **Sample Efficiency**: How well an algorithm learns from limited experience.  
+- **Learning Curve**: A graph showing *agent's* performance over training *episodes*.
 
 ---
 
 ## 🧠 Important Concepts
 
+- ***Action* space**: set of possible *actions*.
 - **Convergence**: The point at which an algorithm’s learning stabilizes, meaning its value estimates or *policy* stop changing significantly and consistently lead to optimal or near-optimal decisions.
+- **Discounted**: A way of reducing the importance of future rewards by multiplying them with a factor so that immidiate rewards value more.
 - **ε-greedy**: An *exploration* strategy where the *agent* chooses a random *action* with probability ε, and the best-known *action* with probability 1−ε. It balances *exploration* and *exploitation*.
-- **Episode**: A single sequence of *states*, *actions*, and *rewards* that ends in a terminal *state*. Used in *episodic* tasks where each run resets the *environment*.
-- **Neural network**: A model used to approximate functions or *policies* in RL.  
-- **Sample efficiency**: How well an algorithm learns from limited experience.  
+- **Episode**: A single sequence of *states*, *actions*, and *rewards* that ends in a terminal *state*. In *episodic* tasks after an *episode*, the *environment* resets.
+- ***State* space**: set of possible *states*.

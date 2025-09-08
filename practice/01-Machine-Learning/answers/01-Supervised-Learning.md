@@ -1,7 +1,7 @@
-# Supervised Learning Test
+# Supervised Learning - Test
 
 1. What is supervised learning?
-> Supervised learning is a category of ML where The model is trained on unlabeled data, meaning input-output pairs.
+> Supervised learning is a category of ML where the model is trained on unlabeled data, meaning input-output pairs.
 
 2. What are the types of supervised learning, and what do they mean?
 > There are two types of supervised learning: regression, where the target/label is a continuous numeric value, and there's classification, where the target/label is a categorical value/a class.
