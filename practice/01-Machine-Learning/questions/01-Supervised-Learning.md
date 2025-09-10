@@ -4,7 +4,7 @@
 
 2. What are the types of supervised learning, and what do they mean?
 
-3. How does these algorithms work? When do we use them? What are some strengths and weaknesses? What do the attached concepts mean?
+3. How do these algorithms work? When do we use them? What are some strengths and weaknesses? What do the attached concepts mean?
 
 Linear Regression
 

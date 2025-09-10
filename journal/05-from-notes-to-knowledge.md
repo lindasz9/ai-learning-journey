@@ -29,3 +29,11 @@ It's so weird that I actually enjoy what I'm studying.
 📝 Reinforcement Learning
 
 Reinforcement learning is definitely a more complex topic. Reviewing it probably took me over two hours, and I still have some unanswered questions.
+
+## 09/09/2025
+
+I think I'm gonna skip the `06-Reinforcement-in-Python.md` for now, because that's a big thing this early. I'm still just studying the theory, which I worry about, but I want to finish the whole ML topic, then build models myself.
+
+## 09/10/2025
+
+📝 Hybrid Learning Techniques

@@ -13,8 +13,7 @@ This workflow includes the following steps:
 5. 🏋️ Train the Model  
 6. 🧪 Evaluate the Model  
 7. 🎛️ Tune Hyperparameters  
-8. 👁️ Test on Unseen Data  
-9. 🚀 Deploy the Model
+8. 👁️ Test on Unseen Data
 
 ---
 

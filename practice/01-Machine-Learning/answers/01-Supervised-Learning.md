@@ -6,7 +6,7 @@
 2. What are the types of supervised learning, and what do they mean?
 > There are two types of supervised learning: regression, where the target/label is a continuous numeric value, and there's classification, where the target/label is a categorical value/a class.
 
-3. How does these algorithms work? When do we use them? What are some strengths and weaknesses? What do the attached concepts mean?
+3. How do these algorithms work? When do we use them? What are some strengths and weaknesses? What do the attached concepts mean?
 
 Linear Regression
 > A regression algorithm, that finds a linear pattern (y = wx + b) between the input features and the target, and then makes predictions based on this linear model. We use it for simple, regression problems where there is a linear relationship between inputs and output. It's simple and easy to implement and to visualize, but it's sensitive to outliers and only works on linear data.
