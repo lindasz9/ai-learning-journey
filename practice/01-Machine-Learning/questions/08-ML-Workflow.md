@@ -8,6 +8,8 @@ Where can we get data?
 
 What do we consider "good" data?
 
+Crowdsourcing
+
 Feature
 
 Target (Label)
@@ -18,17 +20,57 @@ Instance (Sample, Example)
 
 How do we clean the data?
 
-How do we integrate the data?
+- Imputation
 
-How do we encode the data?
+- Mean/median imputation
+
+- KNN imputation
+
+- Handling outliers
+
+- Clipping
+
+- Removal
+
+- Z-score method
+
+What's data integration?
+
+What's encoding?
+
+- One-hot encoding
+
+- Label encoding
+
+- Ordinal encoding
+
+- Frequency encoding
+
+- Target encoding
 
 What's feature engineering?
 
-How do we transform the data?
+What's data transformation?
+
+- Scaling
+
+- Standarization
+
+- Normalization
+
+- Log transformation
+
+- Box-Cox transformation
 
 How do we reduce dimensionality?
 
 4. What does "split data into training and test sets" mean? What do the attached concepts mean?
+
+Training set
+
+Validation set
+
+Test set
 
 Sampling
 
@@ -64,8 +106,6 @@ What are the steps?
 
 - Optimization
 
-- Repeat
-
 - Validation
 
 What are the risks?
@@ -78,11 +118,19 @@ What are common strategies?
 
 - Batch training
 
+Batch size
+
+Bias
+
+Epochs
+
 Loss function
 
-Optimization
-
 Learning rate
+
+Optimizer
+
+Weight
 
 7. What does "evaluate the model" mean? What do the attached concepts mean?
 
@@ -90,13 +138,19 @@ What are some evaluation metrics?
 
 What are some visualization tools?
 
+- Confusion matrix
+
+- ROC curve
+
+- PR curve
+
 Calibration
 
 8. What does "tune hyperparameters" mean? What do the attached concepts mean?
 
 What are some hyperparameters?
 
-What are some common methods?
+What are some common methods for finding optimal hyperparameters?
 
 - Grid search
 

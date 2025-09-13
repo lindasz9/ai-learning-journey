@@ -37,3 +37,9 @@ I think I'm gonna skip the `06-Reinforcement-in-Python.md` for now, because that
 ## 09/10/2025
 
 📝 Hybrid Learning Techniques
+
+## 09/13/2025
+
+📝 ML Workflow
+
+Finishing the last ML topic means I now have a good grasp of the ML theory. I’m not sure whether the next step should be moving on to the next topic, deep learning, or starting to practice building ML models. I think I’ll go with the second option.
