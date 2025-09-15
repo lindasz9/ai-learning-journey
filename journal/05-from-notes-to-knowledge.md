@@ -43,3 +43,7 @@ I think I'm gonna skip the `06-Reinforcement-in-Python.md` for now, because that
 📝 ML Workflow
 
 Finishing the last ML topic means I now have a good grasp of the ML theory. I’m not sure whether the next step should be moving on to the next topic, deep learning, or starting to practice building ML models. I think I’ll go with the second option.
+
+## 09/15/2025
+
+The reason I don’t spend much time on this `ai-learning-journey` is that I also have a `cp-learning-journey` and a `math-learning-journey`. Right now, those two are more important because I need them this year, while AI can wait until after I finish high school.
