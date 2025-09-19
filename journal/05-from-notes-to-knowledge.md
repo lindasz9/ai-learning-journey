@@ -47,3 +47,13 @@ Finishing the last ML topic means I now have a good grasp of the ML theory. I’
 ## 09/15/2025
 
 The reason I don’t spend much time on this `ai-learning-journey` is that I also have a `cp-learning-journey` and a `math-learning-journey`. Right now, those two are more important because I need them this year, while AI can wait until after I finish high school.
+
+## 09/17/2035
+
+Since I’ve finished studying ML, I won’t jump straight into deep learning. Instead, I’m going to use Kaggle to practice on real-world problems. It’s hard to find time for this on weekdays, but I’ll dedicate time on the weekends.
+
+## 09/19/2025
+
+🤖 Titanic - Machine Learning from Disaster
+
+I started using Kaggle, and it seems really useful. I think I’ll practice here for a while before moving on to deep learning.
