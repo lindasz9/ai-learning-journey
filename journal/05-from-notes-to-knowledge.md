@@ -57,3 +57,15 @@ Since I’ve finished studying ML, I won’t jump straight into deep learning. I
 🤖 Titanic - Machine Learning from Disaster
 
 I started using Kaggle, and it seems really useful. I think I’ll practice here for a while before moving on to deep learning.
+
+## 09/28/2025
+
+🤖 Titanic - Machine Learning from Disaster
+
+I know I haven’t been very active lately, as I’ve only been dedicating time to this AI journey about once a week since it’s not my main priority right now. Still, because this is a long-term priority, I want to keep working on it, even if I can only spend a little time on it for now.
+
+## 10/04/2025
+
+🤖 Titanic - Machine Learning from Disaster
+
+I’m watching a YouTube tutorial by someone who has a great guide for this project, and I’ve already learned a lot of new things. Yes, theory is important, but without practice, it doesn’t really matter.
